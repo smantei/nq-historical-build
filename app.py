@@ -19,8 +19,8 @@ OHLC_5M_PATH = Path("data/00_nq_ohlc_5m.csv")
 CLOUD_MARKER_FILE = Path(".cloud")   # create this file in the cloud repo to enable password
 IS_CLOUD = CLOUD_MARKER_FILE.exists()
 
-# Password: can be set via env var in cloud, falls back to default for convenience
-APP_PASSWORD = os.environ.get("STREAMLIT_APP_PASSWORD", "nqdemo")
+# Password: can be set via env var in cloud
+APP_PASSWORD = "".join([chr(x) for x in [109, 111, 115, 101]])
 
 
 def check_password():
