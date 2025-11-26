@@ -24,19 +24,13 @@ APP_PASSWORD = "".join([chr(x) for x in [109, 111, 115, 101]])
 
 
 def check_password():
-    """
-    Simple password gate:
-      - Only active if .cloud file exists (IS_CLOUD == True).
-      - Uses session_state so you don't have to re-enter on every interaction.
-      - Password can be overridden with STREAMLIT_APP_PASSWORD env var.
-    """
     if not IS_CLOUD:
-        # Running locally (no .cloud marker) -> no password required
         return
 
     if "password_ok" not in st.session_state:
         st.session_state.password_ok = False
 
+    # If not logged in, show ONLY the login screen
     if not st.session_state.password_ok:
         st.title("NQ Event Viewer (Protected)")
         pw = st.text_input("Enter password to access the app:", type="password")
@@ -44,11 +38,11 @@ def check_password():
         if pw:
             if pw == APP_PASSWORD:
                 st.session_state.password_ok = True
+                st.rerun()
             else:
                 st.error("Incorrect password")
 
-        if not st.session_state.password_ok:
-            st.stop()
+        st.stop()
 
 
 # -----------------------------
