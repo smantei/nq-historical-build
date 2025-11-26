@@ -1,0 +1,166 @@
+{
+  "event_id": "EV01172",
+  "window": {
+    "hourly_fvg_id": "FH06944",
+    "hourly_start_time": "2022-05-18T08:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2022-05-18 09:55",
+    "bos_window_end": "2022-05-18 12:55"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06944",
+    "direction": "down",
+    "start_time": "2022-05-18T08:00",
+    "begin_bound": 12505.25,
+    "end_bound": 12503.25
+  },
+  "touch": {
+    "touch_id": "TCH0052442",
+    "fvg_hour_id": "FH06944",
+    "fvg_direction": "down",
+    "fvg_start_time": "2022-05-18T08:00",
+    "window_start": "2022-05-18T09:00",
+    "window_end": "2022-05-18T12:00",
+    "ts_event": "2022-05-18 09:55",
+    "price_touched": 12492.0,
+    "bound_broken": 12503.25,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5171312",
+      "direction": "down",
+      "start_time": "2022-05-18T10:35",
+      "begin_bound": 12499.25,
+      "end_bound": 12486.25,
+      "index_first_touch": 5,
+      "index_valid_close_after_touch": 5
+    },
+    {
+      "fvg_5m_id": "F5171313",
+      "direction": "down",
+      "start_time": "2022-05-18T10:40",
+      "begin_bound": 12483.0,
+      "end_bound": 12479.5,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 4
+    },
+    {
+      "fvg_5m_id": "F5171314",
+      "direction": "down",
+      "start_time": "2022-05-18T10:45",
+      "begin_bound": 12478.25,
+      "end_bound": 12476.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5171316",
+      "direction": "down",
+      "start_time": "2022-05-18T11:10",
+      "begin_bound": 12462.25,
+      "end_bound": 12448.0,
+      "index_first_touch": 4,
+      "index_valid_close_after_touch": 5
+    },
+    {
+      "fvg_5m_id": "F5171317",
+      "direction": "down",
+      "start_time": "2022-05-18T11:15",
+      "begin_bound": 12441.75,
+      "end_bound": 12439.0,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 4
+    },
+    {
+      "fvg_5m_id": "F5171319",
+      "direction": "down",
+      "start_time": "2022-05-18T11:45",
+      "begin_bound": 12433.75,
+      "end_bound": 12422.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5171325",
+      "direction": "down",
+      "start_time": "2022-05-18T12:55",
+      "begin_bound": 12389.25,
+      "end_bound": 12383.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0125843",
+      "ts_event": "2022-05-18 09:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 12511.0,
+      "broken_level": 12502.75,
+      "source_hilo_id": "HL0835923"
+    },
+    {
+      "bos_id": "BOS0125844",
+      "ts_event": "2022-05-18 10:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 12484.0,
+      "broken_level": 12499.25,
+      "source_hilo_id": "HL0835931"
+    },
+    {
+      "bos_id": "BOS0125845",
+      "ts_event": "2022-05-18 11:00",
+      "bos_direction": "bos_down",
+      "trigger_close": 12465.5,
+      "broken_level": 12469.0,
+      "source_hilo_id": "HL0835936"
+    },
+    {
+      "bos_id": "BOS0125846",
+      "ts_event": "2022-05-18 12:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 12437.0,
+      "broken_level": 12428.5,
+      "source_hilo_id": "HL0835949"
+    },
+    {
+      "bos_id": "BOS0125847",
+      "ts_event": "2022-05-18 12:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 12443.75,
+      "broken_level": 12439.25,
+      "source_hilo_id": "HL0835954"
+    },
+    {
+      "bos_id": "BOS0125848",
+      "ts_event": "2022-05-18 12:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 12427.25,
+      "broken_level": 12430.0,
+      "source_hilo_id": "HL0835955"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5171312",
+      "direction": "down",
+      "index_first_touch": 5,
+      "index_valid_close_after_touch": 5,
+      "entry_ts": "2022-05-18 11:00",
+      "entry_price": 12465.5,
+      "stop_loss": 12524.75,
+      "take_profit": 12406.25,
+      "exit_signal": "sell_s_prof",
+      "exit_ts": "2022-05-18 12:40",
+      "exit_price": 12406.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 7,
+    "count_bos_5m": 6,
+    "count_signals": 1
+  }
+}

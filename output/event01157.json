@@ -1,0 +1,88 @@
+{
+  "event_id": "EV01157",
+  "window": {
+    "hourly_fvg_id": "FH06842",
+    "hourly_start_time": "2022-03-14T17:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2022-03-14 19:00",
+    "bos_window_end": "2022-03-14 22:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06842",
+    "direction": "down",
+    "start_time": "2022-03-14T17:00",
+    "begin_bound": 13171.5,
+    "end_bound": 13108.5
+  },
+  "touch": {
+    "touch_id": "TCH0051951",
+    "fvg_hour_id": "FH06842",
+    "fvg_direction": "down",
+    "fvg_start_time": "2022-03-14T17:00",
+    "window_start": "2022-03-14T18:00",
+    "window_end": "2022-03-14T21:00",
+    "ts_event": "2022-03-14 19:00",
+    "price_touched": 13070.5,
+    "bound_broken": 13108.5,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5168708",
+      "direction": "down",
+      "start_time": "2022-03-14T19:35",
+      "begin_bound": 13069.75,
+      "end_bound": 13052.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0123696",
+      "ts_event": "2022-03-14 19:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 13102.75,
+      "broken_level": 13092.25,
+      "source_hilo_id": "HL0823334"
+    },
+    {
+      "bos_id": "BOS0123697",
+      "ts_event": "2022-03-14 19:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 13036.5,
+      "broken_level": 13072.5,
+      "source_hilo_id": "HL0823342"
+    },
+    {
+      "bos_id": "BOS0123698",
+      "ts_event": "2022-03-14 20:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 13078.75,
+      "broken_level": 13076.75,
+      "source_hilo_id": "HL0823358"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5168708",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2022-03-14 19:50",
+      "entry_price": 13035.0,
+      "stop_loss": 13120.5,
+      "take_profit": 12949.5,
+      "exit_signal": "sell_s_loss_session_close",
+      "exit_ts": "2022-03-14 20:55",
+      "exit_price": 13078.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

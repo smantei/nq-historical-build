@@ -1,0 +1,97 @@
+{
+  "event_id": "EV00381",
+  "window": {
+    "hourly_fvg_id": "FH02220",
+    "hourly_start_time": "2014-04-14T12:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2014-04-14 13:55",
+    "bos_window_end": "2014-04-14 16:55"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH02220",
+    "direction": "up",
+    "start_time": "2014-04-14T12:00",
+    "begin_bound": 3443.5,
+    "end_bound": 3450.75
+  },
+  "touch": {
+    "touch_id": "TCH0017918",
+    "fvg_hour_id": "FH02220",
+    "fvg_direction": "up",
+    "fvg_start_time": "2014-04-14T12:00",
+    "window_start": "2014-04-14T13:00",
+    "window_end": "2014-04-14T16:00",
+    "ts_event": "2014-04-14 13:55",
+    "price_touched": 3447.5,
+    "bound_broken": 3450.75,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F556931",
+      "direction": "up",
+      "start_time": "2014-04-14T14:55",
+      "begin_bound": 3475.5,
+      "end_bound": 3478.5,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F556934",
+      "direction": "up",
+      "start_time": "2014-04-14T16:15",
+      "begin_bound": 3474.25,
+      "end_bound": 3474.5,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0037239",
+      "ts_event": "2014-04-14 14:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 3465.5,
+      "broken_level": 3463.0,
+      "source_hilo_id": "HL0269315"
+    },
+    {
+      "bos_id": "BOS0037240",
+      "ts_event": "2014-04-14 15:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 3483.75,
+      "broken_level": 3482.0,
+      "source_hilo_id": "HL0269328"
+    },
+    {
+      "bos_id": "BOS0037241",
+      "ts_event": "2014-04-14 15:55",
+      "bos_direction": "bos_down",
+      "trigger_close": 3474.5,
+      "broken_level": 3475.75,
+      "source_hilo_id": "HL0269330"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F556931",
+      "direction": "up",
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2014-04-14 15:10",
+      "entry_price": 3481.0,
+      "stop_loss": 3445.0,
+      "take_profit": 3517.0,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2014-04-14 19:00",
+      "exit_price": 3445.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "event_id": "EV00386",
+  "window": {
+    "hourly_fvg_id": "FH02254",
+    "hourly_start_time": "2014-05-06T18:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2014-05-06 19:20",
+    "bos_window_end": "2014-05-06 22:20"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH02254",
+    "direction": "down",
+    "start_time": "2014-05-06T18:00",
+    "begin_bound": 3575.5,
+    "end_bound": 3561.75
+  },
+  "touch": {
+    "touch_id": "TCH0018377",
+    "fvg_hour_id": "FH02254",
+    "fvg_direction": "down",
+    "fvg_start_time": "2014-05-06T18:00",
+    "window_start": "2014-05-06T19:00",
+    "window_end": "2014-05-06T22:00",
+    "ts_event": "2014-05-06 19:20",
+    "price_touched": 3559.25,
+    "bound_broken": 3561.75,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F557756",
+      "direction": "down",
+      "start_time": "2014-05-06T19:55",
+      "begin_bound": 3554.0,
+      "end_bound": 3551.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0037812",
+      "ts_event": "2014-05-06 19:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 3556.75,
+      "broken_level": 3557.5,
+      "source_hilo_id": "HL0273508"
+    },
+    {
+      "bos_id": "BOS0037813",
+      "ts_event": "2014-05-06 21:10",
+      "bos_direction": "bos_down",
+      "trigger_close": 3550.5,
+      "broken_level": 3551.25,
+      "source_hilo_id": "HL0273522"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F557756",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2014-05-06 20:05",
+      "entry_price": 3547.75,
+      "stop_loss": 3563.5,
+      "take_profit": 3532.0,
+      "exit_signal": "sell_s_loss_session_close",
+      "exit_ts": "2014-05-06 20:55",
+      "exit_price": 3551.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 2,
+    "count_signals": 1
+  }
+}

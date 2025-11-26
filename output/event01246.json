@@ -1,0 +1,156 @@
+{
+  "event_id": "EV01246",
+  "window": {
+    "hourly_fvg_id": "FH07362",
+    "hourly_start_time": "2023-02-08T16:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2023-02-08 18:05",
+    "bos_window_end": "2023-02-08 21:05"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH07362",
+    "direction": "down",
+    "start_time": "2023-02-08T16:00",
+    "begin_bound": 12662.5,
+    "end_bound": 12619.0
+  },
+  "touch": {
+    "touch_id": "TCH0055584",
+    "fvg_hour_id": "FH07362",
+    "fvg_direction": "down",
+    "fvg_start_time": "2023-02-08T16:00",
+    "window_start": "2023-02-08T17:00",
+    "window_end": "2023-02-08T20:00",
+    "ts_event": "2023-02-08 18:05",
+    "price_touched": 12585.25,
+    "bound_broken": 12619.0,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5181950",
+      "direction": "down",
+      "start_time": "2023-02-08T19:25",
+      "begin_bound": 12581.0,
+      "end_bound": 12578.25,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5181951",
+      "direction": "down",
+      "start_time": "2023-02-08T19:30",
+      "begin_bound": 12576.25,
+      "end_bound": 12574.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5181952",
+      "direction": "down",
+      "start_time": "2023-02-08T19:45",
+      "begin_bound": 12565.0,
+      "end_bound": 12555.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5181953",
+      "direction": "down",
+      "start_time": "2023-02-08T20:05",
+      "begin_bound": 12549.0,
+      "end_bound": 12542.25,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 4
+    },
+    {
+      "fvg_5m_id": "F5181954",
+      "direction": "down",
+      "start_time": "2023-02-08T20:10",
+      "begin_bound": 12537.75,
+      "end_bound": 12534.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0134643",
+      "ts_event": "2023-02-08 18:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 12606.5,
+      "broken_level": 12603.0,
+      "source_hilo_id": "HL0887559"
+    },
+    {
+      "bos_id": "BOS0134644",
+      "ts_event": "2023-02-08 18:25",
+      "bos_direction": "bos_down",
+      "trigger_close": 12572.0,
+      "broken_level": 12582.0,
+      "source_hilo_id": "HL0887569"
+    },
+    {
+      "bos_id": "BOS0134645",
+      "ts_event": "2023-02-08 18:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 12568.0,
+      "broken_level": 12564.5,
+      "source_hilo_id": "HL0887574"
+    },
+    {
+      "bos_id": "BOS0134646",
+      "ts_event": "2023-02-08 19:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 12582.5,
+      "broken_level": 12574.5,
+      "source_hilo_id": "HL0887577"
+    },
+    {
+      "bos_id": "BOS0134647",
+      "ts_event": "2023-02-08 19:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 12553.75,
+      "broken_level": 12561.0,
+      "source_hilo_id": "HL0887583"
+    },
+    {
+      "bos_id": "BOS0134648",
+      "ts_event": "2023-02-08 20:05",
+      "bos_direction": "bos_down",
+      "trigger_close": 12532.75,
+      "broken_level": 12536.75,
+      "source_hilo_id": "HL0887587"
+    },
+    {
+      "bos_id": "BOS0134649",
+      "ts_event": "2023-02-08 20:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 12551.75,
+      "broken_level": 12544.25,
+      "source_hilo_id": "HL0887594"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5181952",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2023-02-08 20:00",
+      "entry_price": 12539.75,
+      "stop_loss": 12623.75,
+      "take_profit": 12455.75,
+      "exit_signal": "sell_s_loss_session_close",
+      "exit_ts": "2023-02-08 20:55",
+      "exit_price": 12543.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 5,
+    "count_bos_5m": 7,
+    "count_signals": 1
+  }
+}

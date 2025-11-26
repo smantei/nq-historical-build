@@ -1,0 +1,88 @@
+{
+  "event_id": "EV01038",
+  "window": {
+    "hourly_fvg_id": "FH06183",
+    "hourly_start_time": "2021-02-12T16:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2021-02-12 18:20",
+    "bos_window_end": "2021-02-12 21:20"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06183",
+    "direction": "up",
+    "start_time": "2021-02-12T16:00",
+    "begin_bound": 13705.5,
+    "end_bound": 13717.75
+  },
+  "touch": {
+    "touch_id": "TCH0046930",
+    "fvg_hour_id": "FH06183",
+    "fvg_direction": "up",
+    "fvg_start_time": "2021-02-12T16:00",
+    "window_start": "2021-02-12T17:00",
+    "window_end": "2021-02-12T20:00",
+    "ts_event": "2021-02-12 18:20",
+    "price_touched": 13711.5,
+    "bound_broken": 13717.75,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5153591",
+      "direction": "up",
+      "start_time": "2021-02-12T19:20",
+      "begin_bound": 13725.5,
+      "end_bound": 13725.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0110857",
+      "ts_event": "2021-02-12 19:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 13726.75,
+      "broken_level": 13725.5,
+      "source_hilo_id": "HL0746801"
+    },
+    {
+      "bos_id": "BOS0110858",
+      "ts_event": "2021-02-12 19:45",
+      "bos_direction": "bos_up",
+      "trigger_close": 13741.75,
+      "broken_level": 13730.5,
+      "source_hilo_id": "HL0746806"
+    },
+    {
+      "bos_id": "BOS0110859",
+      "ts_event": "2021-02-12 20:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 13749.25,
+      "broken_level": 13745.75,
+      "source_hilo_id": "HL0746810"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5153591",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2021-02-12 19:25",
+      "entry_price": 13728.5,
+      "stop_loss": 13708.75,
+      "take_profit": 13748.25,
+      "exit_signal": "sell_l_prof_friday_close",
+      "exit_ts": "2021-02-12 20:10",
+      "exit_price": 13740.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

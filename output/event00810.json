@@ -1,0 +1,163 @@
+{
+  "event_id": "EV00810",
+  "window": {
+    "hourly_fvg_id": "FH04844",
+    "hourly_start_time": "2018-10-17T09:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2018-10-17 11:00",
+    "bos_window_end": "2018-10-17 14:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH04844",
+    "direction": "down",
+    "start_time": "2018-10-17T09:00",
+    "begin_bound": 7347.5,
+    "end_bound": 7338.25
+  },
+  "touch": {
+    "touch_id": "TCH0037010",
+    "fvg_hour_id": "FH04844",
+    "fvg_direction": "down",
+    "fvg_start_time": "2018-10-17T09:00",
+    "window_start": "2018-10-17T10:00",
+    "window_end": "2018-10-17T13:00",
+    "ts_event": "2018-10-17 11:00",
+    "price_touched": 7334.0,
+    "bound_broken": 7338.25,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5121891",
+      "direction": "down",
+      "start_time": "2018-10-17T11:55",
+      "begin_bound": 7322.5,
+      "end_bound": 7321.75,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5121892",
+      "direction": "down",
+      "start_time": "2018-10-17T12:20",
+      "begin_bound": 7316.0,
+      "end_bound": 7314.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5121897",
+      "direction": "down",
+      "start_time": "2018-10-17T13:40",
+      "begin_bound": 7295.25,
+      "end_bound": 7291.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    },
+    {
+      "fvg_5m_id": "F5121898",
+      "direction": "down",
+      "start_time": "2018-10-17T14:00",
+      "begin_bound": 7270.0,
+      "end_bound": 7268.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0083981",
+      "ts_event": "2018-10-17 11:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 7338.5,
+      "broken_level": 7338.0,
+      "source_hilo_id": "HL0584594"
+    },
+    {
+      "bos_id": "BOS0083982",
+      "ts_event": "2018-10-17 11:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 7333.75,
+      "broken_level": 7335.75,
+      "source_hilo_id": "HL0584597"
+    },
+    {
+      "bos_id": "BOS0083983",
+      "ts_event": "2018-10-17 11:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 7320.5,
+      "broken_level": 7322.5,
+      "source_hilo_id": "HL0584603"
+    },
+    {
+      "bos_id": "BOS0083984",
+      "ts_event": "2018-10-17 12:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 7312.5,
+      "broken_level": 7313.5,
+      "source_hilo_id": "HL0584607"
+    },
+    {
+      "bos_id": "BOS0083985",
+      "ts_event": "2018-10-17 12:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 7320.25,
+      "broken_level": 7315.75,
+      "source_hilo_id": "HL0584613"
+    },
+    {
+      "bos_id": "BOS0083986",
+      "ts_event": "2018-10-17 13:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 7326.0,
+      "broken_level": 7322.5,
+      "source_hilo_id": "HL0584618"
+    },
+    {
+      "bos_id": "BOS0083987",
+      "ts_event": "2018-10-17 13:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 7331.0,
+      "broken_level": 7329.0,
+      "source_hilo_id": "HL0584623"
+    },
+    {
+      "bos_id": "BOS0083988",
+      "ts_event": "2018-10-17 13:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 7298.5,
+      "broken_level": 7319.5,
+      "source_hilo_id": "HL0584624"
+    },
+    {
+      "bos_id": "BOS0083989",
+      "ts_event": "2018-10-17 13:55",
+      "bos_direction": "bos_down",
+      "trigger_close": 7267.75,
+      "broken_level": 7270.0,
+      "source_hilo_id": "HL0584629"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5121891",
+      "direction": "down",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2018-10-17 12:10",
+      "entry_price": 7319.0,
+      "stop_loss": 7341.75,
+      "take_profit": 7296.25,
+      "exit_signal": "sell_s_prof",
+      "exit_ts": "2018-10-17 13:30",
+      "exit_price": 7296.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 4,
+    "count_bos_5m": 9,
+    "count_signals": 1
+  }
+}

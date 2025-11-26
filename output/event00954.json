@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00954",
+  "window": {
+    "hourly_fvg_id": "FH05606",
+    "hourly_start_time": "2020-03-03T09:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2020-03-03 11:10",
+    "bos_window_end": "2020-03-03 14:10"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH05606",
+    "direction": "up",
+    "start_time": "2020-03-03T09:00",
+    "begin_bound": 8831.5,
+    "end_bound": 8846.75
+  },
+  "touch": {
+    "touch_id": "TCH0042729",
+    "fvg_hour_id": "FH05606",
+    "fvg_direction": "up",
+    "fvg_start_time": "2020-03-03T09:00",
+    "window_start": "2020-03-03T10:00",
+    "window_end": "2020-03-03T13:00",
+    "ts_event": "2020-03-03 11:10",
+    "price_touched": 8843.25,
+    "bound_broken": 8846.75,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5140552",
+      "direction": "up",
+      "start_time": "2020-03-03T13:25",
+      "begin_bound": 8836.0,
+      "end_bound": 8854.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0099557",
+      "ts_event": "2020-03-03 12:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 8868.25,
+      "broken_level": 8859.0,
+      "source_hilo_id": "HL0680431"
+    },
+    {
+      "bos_id": "BOS0099558",
+      "ts_event": "2020-03-03 12:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 8812.75,
+      "broken_level": 8844.5,
+      "source_hilo_id": "HL0680432"
+    },
+    {
+      "bos_id": "BOS0099559",
+      "ts_event": "2020-03-03 13:20",
+      "bos_direction": "bos_up",
+      "trigger_close": 8861.75,
+      "broken_level": 8844.5,
+      "source_hilo_id": "HL0680444"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5140552",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2020-03-03 13:30",
+      "entry_price": 8870.25,
+      "stop_loss": 8784.5,
+      "take_profit": 8956.0,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2020-03-03 14:50",
+      "exit_price": 8784.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

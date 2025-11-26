@@ -1,0 +1,120 @@
+{
+  "event_id": "EV00185",
+  "window": {
+    "hourly_fvg_id": "FH01108",
+    "hourly_start_time": "2012-05-03T11:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2012-05-03 12:00",
+    "bos_window_end": "2012-05-03 15:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH01108",
+    "direction": "up",
+    "start_time": "2012-05-03T11:00",
+    "begin_bound": 2732.0,
+    "end_bound": 2734.0
+  },
+  "touch": {
+    "touch_id": "TCH0008725",
+    "fvg_hour_id": "FH01108",
+    "fvg_direction": "up",
+    "fvg_start_time": "2012-05-03T11:00",
+    "window_start": "2012-05-03T12:00",
+    "window_end": "2012-05-03T15:00",
+    "ts_event": "2012-05-03 12:00",
+    "price_touched": 2733.5,
+    "bound_broken": 2734.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F528739",
+      "direction": "up",
+      "start_time": "2012-05-03T12:35",
+      "begin_bound": 2732.75,
+      "end_bound": 2735.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0018854",
+      "ts_event": "2012-05-03 12:05",
+      "bos_direction": "bos_down",
+      "trigger_close": 2732.0,
+      "broken_level": 2734.0,
+      "source_hilo_id": "HL0134818"
+    },
+    {
+      "bos_id": "BOS0018855",
+      "ts_event": "2012-05-03 12:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 2737.0,
+      "broken_level": 2736.0,
+      "source_hilo_id": "HL0134819"
+    },
+    {
+      "bos_id": "BOS0018856",
+      "ts_event": "2012-05-03 12:45",
+      "bos_direction": "bos_down",
+      "trigger_close": 2733.0,
+      "broken_level": 2735.5,
+      "source_hilo_id": "HL0134828"
+    },
+    {
+      "bos_id": "BOS0018857",
+      "ts_event": "2012-05-03 13:25",
+      "bos_direction": "bos_down",
+      "trigger_close": 2731.0,
+      "broken_level": 2731.5,
+      "source_hilo_id": "HL0134834"
+    },
+    {
+      "bos_id": "BOS0018858",
+      "ts_event": "2012-05-03 14:00",
+      "bos_direction": "bos_down",
+      "trigger_close": 2722.0,
+      "broken_level": 2726.25,
+      "source_hilo_id": "HL0134841"
+    },
+    {
+      "bos_id": "BOS0018859",
+      "ts_event": "2012-05-03 14:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 2726.25,
+      "broken_level": 2723.5,
+      "source_hilo_id": "HL0134850"
+    },
+    {
+      "bos_id": "BOS0018860",
+      "ts_event": "2012-05-03 14:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 2727.5,
+      "broken_level": 2727.25,
+      "source_hilo_id": "HL0134852"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F528739",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2012-05-03 12:40",
+      "entry_price": 2736.75,
+      "stop_loss": 2729.75,
+      "take_profit": 2743.75,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2012-05-03 13:25",
+      "exit_price": 2729.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 7,
+    "count_signals": 1
+  }
+}

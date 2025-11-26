@@ -1,0 +1,81 @@
+{
+  "event_id": "EV00658",
+  "window": {
+    "hourly_fvg_id": "FH03922",
+    "hourly_start_time": "2017-05-08T17:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2017-05-08 19:40",
+    "bos_window_end": "2017-05-08 22:40"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03922",
+    "direction": "up",
+    "start_time": "2017-05-08T17:00",
+    "begin_bound": 5645.0,
+    "end_bound": 5645.5
+  },
+  "touch": {
+    "touch_id": "TCH0030770",
+    "fvg_hour_id": "FH03922",
+    "fvg_direction": "up",
+    "fvg_start_time": "2017-05-08T17:00",
+    "window_start": "2017-05-08T18:00",
+    "window_end": "2017-05-08T21:00",
+    "ts_event": "2017-05-08 19:40",
+    "price_touched": 5644.75,
+    "bound_broken": 5645.5,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5101206",
+      "direction": "up",
+      "start_time": "2017-05-08T20:00",
+      "begin_bound": 5653.0,
+      "end_bound": 5653.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5101207",
+      "direction": "up",
+      "start_time": "2017-05-08T22:25",
+      "begin_bound": 5655.0,
+      "end_bound": 5655.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 4
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0068412",
+      "ts_event": "2017-05-08 19:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 5652.5,
+      "broken_level": 5650.5,
+      "source_hilo_id": "HL0483034"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5101206",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2017-05-08 20:10",
+      "entry_price": 5655.0,
+      "stop_loss": 5643.75,
+      "take_profit": 5666.25,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2017-05-08 20:55",
+      "exit_price": 5655.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 1,
+    "count_signals": 1
+  }
+}

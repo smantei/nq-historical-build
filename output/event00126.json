@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00126",
+  "window": {
+    "hourly_fvg_id": "FH00775",
+    "hourly_start_time": "2011-10-11T15:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2011-10-11 16:45",
+    "bos_window_end": "2011-10-11 19:45"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH00775",
+    "direction": "up",
+    "start_time": "2011-10-11T15:00",
+    "begin_bound": 2281.0,
+    "end_bound": 2284.0
+  },
+  "touch": {
+    "touch_id": "TCH0005746",
+    "fvg_hour_id": "FH00775",
+    "fvg_direction": "up",
+    "fvg_start_time": "2011-10-11T15:00",
+    "window_start": "2011-10-11T16:00",
+    "window_end": "2011-10-11T19:00",
+    "ts_event": "2011-10-11 16:45",
+    "price_touched": 2281.25,
+    "bound_broken": 2284.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F520576",
+      "direction": "up",
+      "start_time": "2011-10-11T17:55",
+      "begin_bound": 2289.5,
+      "end_bound": 2291.5,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0013266",
+      "ts_event": "2011-10-11 16:45",
+      "bos_direction": "bos_down",
+      "trigger_close": 2282.25,
+      "broken_level": 2284.75,
+      "source_hilo_id": "HL0095507"
+    },
+    {
+      "bos_id": "BOS0013267",
+      "ts_event": "2011-10-11 17:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 2292.75,
+      "broken_level": 2290.5,
+      "source_hilo_id": "HL0095518"
+    },
+    {
+      "bos_id": "BOS0013268",
+      "ts_event": "2011-10-11 18:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 2288.25,
+      "broken_level": 2291.5,
+      "source_hilo_id": "HL0095525"
+    },
+    {
+      "bos_id": "BOS0013269",
+      "ts_event": "2011-10-11 18:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 2289.5,
+      "broken_level": 2285.5,
+      "source_hilo_id": "HL0095532"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F520576",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2011-10-11 18:10",
+      "entry_price": 2292.5,
+      "stop_loss": 2279.25,
+      "take_profit": 2305.75,
+      "exit_signal": "sell_l_loss_session_close",
+      "exit_ts": "2011-10-11 20:55",
+      "exit_price": 2283.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

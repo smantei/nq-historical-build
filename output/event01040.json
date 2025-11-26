@@ -1,0 +1,156 @@
+{
+  "event_id": "EV01040",
+  "window": {
+    "hourly_fvg_id": "FH06198",
+    "hourly_start_time": "2021-02-24T17:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2021-02-24 18:00",
+    "bos_window_end": "2021-02-24 21:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06198",
+    "direction": "up",
+    "start_time": "2021-02-24T17:00",
+    "begin_bound": 13117.75,
+    "end_bound": 13183.75
+  },
+  "touch": {
+    "touch_id": "TCH0047004",
+    "fvg_hour_id": "FH06198",
+    "fvg_direction": "up",
+    "fvg_start_time": "2021-02-24T17:00",
+    "window_start": "2021-02-24T18:00",
+    "window_end": "2021-02-24T21:00",
+    "ts_event": "2021-02-24 18:00",
+    "price_touched": 13171.75,
+    "bound_broken": 13183.75,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5154062",
+      "direction": "up",
+      "start_time": "2021-02-24T18:15",
+      "begin_bound": 13201.75,
+      "end_bound": 13210.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    },
+    {
+      "fvg_5m_id": "F5154063",
+      "direction": "up",
+      "start_time": "2021-02-24T18:35",
+      "begin_bound": 13238.5,
+      "end_bound": 13252.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    },
+    {
+      "fvg_5m_id": "F5154065",
+      "direction": "up",
+      "start_time": "2021-02-24T20:30",
+      "begin_bound": 13253.75,
+      "end_bound": 13265.75,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5154066",
+      "direction": "up",
+      "start_time": "2021-02-24T20:35",
+      "begin_bound": 13274.75,
+      "end_bound": 13280.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5154067",
+      "direction": "up",
+      "start_time": "2021-02-24T20:55",
+      "begin_bound": 13286.0,
+      "end_bound": 13290.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0111201",
+      "ts_event": "2021-02-24 18:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 13232.0,
+      "broken_level": 13227.75,
+      "source_hilo_id": "HL0748929"
+    },
+    {
+      "bos_id": "BOS0111202",
+      "ts_event": "2021-02-24 18:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 13265.0,
+      "broken_level": 13263.0,
+      "source_hilo_id": "HL0748933"
+    },
+    {
+      "bos_id": "BOS0111203",
+      "ts_event": "2021-02-24 19:05",
+      "bos_direction": "bos_down",
+      "trigger_close": 13231.5,
+      "broken_level": 13238.5,
+      "source_hilo_id": "HL0748937"
+    },
+    {
+      "bos_id": "BOS0111204",
+      "ts_event": "2021-02-24 19:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 13255.0,
+      "broken_level": 13247.75,
+      "source_hilo_id": "HL0748942"
+    },
+    {
+      "bos_id": "BOS0111205",
+      "ts_event": "2021-02-24 20:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 13255.0,
+      "broken_level": 13248.25,
+      "source_hilo_id": "HL0748949"
+    },
+    {
+      "bos_id": "BOS0111206",
+      "ts_event": "2021-02-24 20:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 13274.25,
+      "broken_level": 13259.5,
+      "source_hilo_id": "HL0748953"
+    },
+    {
+      "bos_id": "BOS0111207",
+      "ts_event": "2021-02-24 21:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 13303.0,
+      "broken_level": 13297.25,
+      "source_hilo_id": "HL0748958"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5154063",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2021-02-24 18:40",
+      "entry_price": 13265.0,
+      "stop_loss": 13170.5,
+      "take_profit": 13359.5,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2021-02-24 20:55",
+      "exit_price": 13295.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 5,
+    "count_bos_5m": 7,
+    "count_signals": 1
+  }
+}

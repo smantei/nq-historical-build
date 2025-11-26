@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00759",
+  "window": {
+    "hourly_fvg_id": "FH04544",
+    "hourly_start_time": "2018-05-11T06:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2018-05-11 08:55",
+    "bos_window_end": "2018-05-11 11:55"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH04544",
+    "direction": "down",
+    "start_time": "2018-05-11T06:00",
+    "begin_bound": 6967.0,
+    "end_bound": 6966.5
+  },
+  "touch": {
+    "touch_id": "TCH0034850",
+    "fvg_hour_id": "FH04544",
+    "fvg_direction": "down",
+    "fvg_start_time": "2018-05-11T06:00",
+    "window_start": "2018-05-11T07:00",
+    "window_end": "2018-05-11T10:00",
+    "ts_event": "2018-05-11 08:55",
+    "price_touched": 6964.25,
+    "bound_broken": 6966.5,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5115635",
+      "direction": "down",
+      "start_time": "2018-05-11T09:25",
+      "begin_bound": 6966.0,
+      "end_bound": 6963.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0079103",
+      "ts_event": "2018-05-11 09:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 6963.5,
+      "broken_level": 6964.5,
+      "source_hilo_id": "HL0553808"
+    },
+    {
+      "bos_id": "BOS0079104",
+      "ts_event": "2018-05-11 10:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 6967.75,
+      "broken_level": 6965.0,
+      "source_hilo_id": "HL0553814"
+    },
+    {
+      "bos_id": "BOS0079105",
+      "ts_event": "2018-05-11 11:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 6977.25,
+      "broken_level": 6976.75,
+      "source_hilo_id": "HL0553837"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5115635",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2018-05-11 09:35",
+      "entry_price": 6963.25,
+      "stop_loss": 6969.5,
+      "take_profit": 6957.0,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2018-05-11 10:15",
+      "exit_price": 6969.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00676",
+  "window": {
+    "hourly_fvg_id": "FH04063",
+    "hourly_start_time": "2017-08-01T11:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2017-08-01 13:00",
+    "bos_window_end": "2017-08-01 16:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH04063",
+    "direction": "down",
+    "start_time": "2017-08-01T11:00",
+    "begin_bound": 5908.25,
+    "end_bound": 5904.25
+  },
+  "touch": {
+    "touch_id": "TCH0031467",
+    "fvg_hour_id": "FH04063",
+    "fvg_direction": "down",
+    "fvg_start_time": "2017-08-01T11:00",
+    "window_start": "2017-08-01T12:00",
+    "window_end": "2017-08-01T15:00",
+    "ts_event": "2017-08-01 13:00",
+    "price_touched": 5901.5,
+    "bound_broken": 5904.25,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5104648",
+      "direction": "down",
+      "start_time": "2017-08-01T13:35",
+      "begin_bound": 5901.5,
+      "end_bound": 5900.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0070730",
+      "ts_event": "2017-08-01 13:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 5901.5,
+      "broken_level": 5901.75,
+      "source_hilo_id": "HL0499480"
+    },
+    {
+      "bos_id": "BOS0070731",
+      "ts_event": "2017-08-01 13:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 5895.25,
+      "broken_level": 5901.25,
+      "source_hilo_id": "HL0499483"
+    },
+    {
+      "bos_id": "BOS0070732",
+      "ts_event": "2017-08-01 14:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 5880.75,
+      "broken_level": 5892.75,
+      "source_hilo_id": "HL0499492"
+    },
+    {
+      "bos_id": "BOS0070733",
+      "ts_event": "2017-08-01 14:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 5902.25,
+      "broken_level": 5897.0,
+      "source_hilo_id": "HL0499493"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5104648",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2017-08-01 13:45",
+      "entry_price": 5893.0,
+      "stop_loss": 5907.0,
+      "take_profit": 5879.0,
+      "exit_signal": "sell_s_prof",
+      "exit_ts": "2017-08-01 14:25",
+      "exit_price": 5879.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

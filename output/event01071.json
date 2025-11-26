@@ -1,0 +1,128 @@
+{
+  "event_id": "EV01071",
+  "window": {
+    "hourly_fvg_id": "FH06408",
+    "hourly_start_time": "2021-06-23T08:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2021-06-23 10:20",
+    "bos_window_end": "2021-06-23 13:20"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06408",
+    "direction": "down",
+    "start_time": "2021-06-23T08:00",
+    "begin_bound": 14290.0,
+    "end_bound": 14275.25
+  },
+  "touch": {
+    "touch_id": "TCH0048407",
+    "fvg_hour_id": "FH06408",
+    "fvg_direction": "down",
+    "fvg_start_time": "2021-06-23T08:00",
+    "window_start": "2021-06-23T09:00",
+    "window_end": "2021-06-23T12:00",
+    "ts_event": "2021-06-23 10:20",
+    "price_touched": 14267.25,
+    "bound_broken": 14275.25,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5158588",
+      "direction": "down",
+      "start_time": "2021-06-23T11:00",
+      "begin_bound": 14272.75,
+      "end_bound": 14270.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0115051",
+      "ts_event": "2021-06-23 10:20",
+      "bos_direction": "bos_up",
+      "trigger_close": 14277.5,
+      "broken_level": 14273.0,
+      "source_hilo_id": "HL0771910"
+    },
+    {
+      "bos_id": "BOS0115052",
+      "ts_event": "2021-06-23 10:55",
+      "bos_direction": "bos_down",
+      "trigger_close": 14268.5,
+      "broken_level": 14272.25,
+      "source_hilo_id": "HL0771921"
+    },
+    {
+      "bos_id": "BOS0115053",
+      "ts_event": "2021-06-23 11:10",
+      "bos_direction": "bos_down",
+      "trigger_close": 14261.5,
+      "broken_level": 14262.75,
+      "source_hilo_id": "HL0771925"
+    },
+    {
+      "bos_id": "BOS0115054",
+      "ts_event": "2021-06-23 11:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 14265.0,
+      "broken_level": 14262.75,
+      "source_hilo_id": "HL0771933"
+    },
+    {
+      "bos_id": "BOS0115055",
+      "ts_event": "2021-06-23 12:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 14278.25,
+      "broken_level": 14269.0,
+      "source_hilo_id": "HL0771935"
+    },
+    {
+      "bos_id": "BOS0115056",
+      "ts_event": "2021-06-23 12:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 14263.0,
+      "broken_level": 14268.0,
+      "source_hilo_id": "HL0771941"
+    },
+    {
+      "bos_id": "BOS0115057",
+      "ts_event": "2021-06-23 12:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 14272.5,
+      "broken_level": 14272.25,
+      "source_hilo_id": "HL0771945"
+    },
+    {
+      "bos_id": "BOS0115058",
+      "ts_event": "2021-06-23 13:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 14263.0,
+      "broken_level": 14263.5,
+      "source_hilo_id": "HL0771946"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5158588",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2021-06-23 11:10",
+      "entry_price": 14261.5,
+      "stop_loss": 14281.25,
+      "take_profit": 14241.75,
+      "exit_signal": "sell_s_prof",
+      "exit_ts": "2021-06-23 11:20",
+      "exit_price": 14241.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 8,
+    "count_signals": 1
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00521",
+  "window": {
+    "hourly_fvg_id": "FH03132",
+    "hourly_start_time": "2015-11-27T15:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2015-11-27 16:00",
+    "bos_window_end": "2015-11-27 19:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03132",
+    "direction": "down",
+    "start_time": "2015-11-27T15:00",
+    "begin_bound": 4685.75,
+    "end_bound": 4678.5
+  },
+  "touch": {
+    "touch_id": "TCH0025034",
+    "fvg_hour_id": "FH03132",
+    "fvg_direction": "down",
+    "fvg_start_time": "2015-11-27T15:00",
+    "window_start": "2015-11-27T16:00",
+    "window_end": "2015-11-27T19:00",
+    "ts_event": "2015-11-27 16:00",
+    "price_touched": 4675.25,
+    "bound_broken": 4678.5,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F580050",
+      "direction": "down",
+      "start_time": "2015-11-27T17:55",
+      "begin_bound": 4683.25,
+      "end_bound": 4682.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0053442",
+      "ts_event": "2015-11-27 16:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 4678.75,
+      "broken_level": 4676.75,
+      "source_hilo_id": "HL0382495"
+    },
+    {
+      "bos_id": "BOS0053443",
+      "ts_event": "2015-11-27 17:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 4686.75,
+      "broken_level": 4685.75,
+      "source_hilo_id": "HL0382509"
+    },
+    {
+      "bos_id": "BOS0053444",
+      "ts_event": "2015-11-27 17:45",
+      "bos_direction": "bos_down",
+      "trigger_close": 4684.75,
+      "broken_level": 4685.0,
+      "source_hilo_id": "HL0382515"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F580050",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2015-11-27 18:00",
+      "entry_price": 4680.5,
+      "stop_loss": 4691.5,
+      "take_profit": 4669.5,
+      "exit_signal": "sell_s_prof",
+      "exit_ts": "2015-11-30 08:05",
+      "exit_price": 4669.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

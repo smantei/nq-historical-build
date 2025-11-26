@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00119",
+  "window": {
+    "hourly_fvg_id": "FH00705",
+    "hourly_start_time": "2011-08-26T16:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2011-08-26 19:15",
+    "bos_window_end": "2011-08-26 22:15"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH00705",
+    "direction": "up",
+    "start_time": "2011-08-26T16:00",
+    "begin_bound": 2111.25,
+    "end_bound": 2148.75
+  },
+  "touch": {
+    "touch_id": "TCH0005114",
+    "fvg_hour_id": "FH00705",
+    "fvg_direction": "up",
+    "fvg_start_time": "2011-08-26T16:00",
+    "window_start": "2011-08-26T17:00",
+    "window_end": "2011-08-26T20:00",
+    "ts_event": "2011-08-26 19:15",
+    "price_touched": 2147.5,
+    "bound_broken": 2148.75,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F518639",
+      "direction": "up",
+      "start_time": "2011-08-26T19:40",
+      "begin_bound": 2155.0,
+      "end_bound": 2156.0,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0011872",
+      "ts_event": "2011-08-26 19:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 2150.25,
+      "broken_level": 2153.5,
+      "source_hilo_id": "HL0086773"
+    },
+    {
+      "bos_id": "BOS0011873",
+      "ts_event": "2011-08-26 19:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 2159.0,
+      "broken_level": 2156.75,
+      "source_hilo_id": "HL0086774"
+    },
+    {
+      "bos_id": "BOS0011874",
+      "ts_event": "2011-08-26 20:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 2165.75,
+      "broken_level": 2161.25,
+      "source_hilo_id": "HL0086780"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F518639",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2011-08-26 19:50",
+      "entry_price": 2159.5,
+      "stop_loss": 2145.0,
+      "take_profit": 2174.0,
+      "exit_signal": "sell_l_prof_friday_close",
+      "exit_ts": "2011-08-26 20:10",
+      "exit_price": 2165.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

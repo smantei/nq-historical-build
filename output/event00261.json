@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00261",
+  "window": {
+    "hourly_fvg_id": "FH01542",
+    "hourly_start_time": "2013-02-01T18:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2013-02-01 19:30",
+    "bos_window_end": "2013-02-01 22:30"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH01542",
+    "direction": "up",
+    "start_time": "2013-02-01T18:00",
+    "begin_bound": 2751.5,
+    "end_bound": 2758.25
+  },
+  "touch": {
+    "touch_id": "TCH0012199",
+    "fvg_hour_id": "FH01542",
+    "fvg_direction": "up",
+    "fvg_start_time": "2013-02-01T18:00",
+    "window_start": "2013-02-01T19:00",
+    "window_end": "2013-02-01T22:00",
+    "ts_event": "2013-02-01 19:30",
+    "price_touched": 2757.5,
+    "bound_broken": 2758.25,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F539771",
+      "direction": "up",
+      "start_time": "2013-02-01T20:45",
+      "begin_bound": 2756.25,
+      "end_bound": 2756.5,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0026237",
+      "ts_event": "2013-02-01 19:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 2758.0,
+      "broken_level": 2759.25,
+      "source_hilo_id": "HL0187039"
+    },
+    {
+      "bos_id": "BOS0026238",
+      "ts_event": "2013-02-01 20:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 2755.75,
+      "broken_level": 2757.25,
+      "source_hilo_id": "HL0187050"
+    },
+    {
+      "bos_id": "BOS0026239",
+      "ts_event": "2013-02-01 20:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 2757.0,
+      "broken_level": 2756.25,
+      "source_hilo_id": "HL0187055"
+    },
+    {
+      "bos_id": "BOS0026240",
+      "ts_event": "2013-02-01 22:10",
+      "bos_direction": "bos_down",
+      "trigger_close": 2756.25,
+      "broken_level": 2757.75,
+      "source_hilo_id": "HL0187066"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F539771",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2013-02-01 20:55",
+      "entry_price": 2758.25,
+      "stop_loss": 2752.75,
+      "take_profit": 2763.75,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2013-02-03 23:20",
+      "exit_price": 2752.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

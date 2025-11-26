@@ -1,0 +1,152 @@
+{
+  "event_id": "EV00846",
+  "window": {
+    "hourly_fvg_id": "FH05004",
+    "hourly_start_time": "2019-02-05T15:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2019-02-05 17:50",
+    "bos_window_end": "2019-02-05 20:50"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH05004",
+    "direction": "up",
+    "start_time": "2019-02-05T15:00",
+    "begin_bound": 6963.5,
+    "end_bound": 6995.25
+  },
+  "touch": {
+    "touch_id": "TCH0038427",
+    "fvg_hour_id": "FH05004",
+    "fvg_direction": "up",
+    "fvg_start_time": "2019-02-05T15:00",
+    "window_start": "2019-02-05T16:00",
+    "window_end": "2019-02-05T19:00",
+    "ts_event": "2019-02-05 17:50",
+    "price_touched": 6990.75,
+    "bound_broken": 6995.25,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5126091",
+      "direction": "up",
+      "start_time": "2019-02-05T19:10",
+      "begin_bound": 7015.25,
+      "end_bound": 7018.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0087445",
+      "ts_event": "2019-02-05 17:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 6992.25,
+      "broken_level": 6996.5,
+      "source_hilo_id": "HL0605422"
+    },
+    {
+      "bos_id": "BOS0087446",
+      "ts_event": "2019-02-05 18:05",
+      "bos_direction": "bos_down",
+      "trigger_close": 6982.25,
+      "broken_level": 6982.5,
+      "source_hilo_id": "HL0605427"
+    },
+    {
+      "bos_id": "BOS0087447",
+      "ts_event": "2019-02-05 18:20",
+      "bos_direction": "bos_up",
+      "trigger_close": 6994.5,
+      "broken_level": 6989.5,
+      "source_hilo_id": "HL0605430"
+    },
+    {
+      "bos_id": "BOS0087448",
+      "ts_event": "2019-02-05 18:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 6998.75,
+      "broken_level": 6997.0,
+      "source_hilo_id": "HL0605433"
+    },
+    {
+      "bos_id": "BOS0087449",
+      "ts_event": "2019-02-05 18:45",
+      "bos_direction": "bos_up",
+      "trigger_close": 7001.75,
+      "broken_level": 7000.0,
+      "source_hilo_id": "HL0605435"
+    },
+    {
+      "bos_id": "BOS0087450",
+      "ts_event": "2019-02-05 18:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 7004.5,
+      "broken_level": 7002.75,
+      "source_hilo_id": "HL0605437"
+    },
+    {
+      "bos_id": "BOS0087451",
+      "ts_event": "2019-02-05 19:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 7017.0,
+      "broken_level": 7018.0,
+      "source_hilo_id": "HL0605442"
+    },
+    {
+      "bos_id": "BOS0087452",
+      "ts_event": "2019-02-05 19:45",
+      "bos_direction": "bos_up",
+      "trigger_close": 7020.25,
+      "broken_level": 7018.5,
+      "source_hilo_id": "HL0605447"
+    },
+    {
+      "bos_id": "BOS0087453",
+      "ts_event": "2019-02-05 19:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 7022.5,
+      "broken_level": 7022.25,
+      "source_hilo_id": "HL0605449"
+    },
+    {
+      "bos_id": "BOS0087454",
+      "ts_event": "2019-02-05 20:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 7025.75,
+      "broken_level": 7023.75,
+      "source_hilo_id": "HL0605451"
+    },
+    {
+      "bos_id": "BOS0087455",
+      "ts_event": "2019-02-05 20:20",
+      "bos_direction": "bos_up",
+      "trigger_close": 7028.0,
+      "broken_level": 7027.25,
+      "source_hilo_id": "HL0605453"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5126091",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2019-02-05 19:15",
+      "entry_price": 7020.25,
+      "stop_loss": 6981.0,
+      "take_profit": 7059.5,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2019-02-05 20:55",
+      "exit_price": 7025.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 11,
+    "count_signals": 1
+  }
+}

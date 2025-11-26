@@ -1,0 +1,98 @@
+{
+  "event_id": "EV00702",
+  "window": {
+    "hourly_fvg_id": "FH04239",
+    "hourly_start_time": "2017-11-22T05:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2017-11-22 06:15",
+    "bos_window_end": "2017-11-22 09:15"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH04239",
+    "direction": "down",
+    "start_time": "2017-11-22T05:00",
+    "begin_bound": 6384.25,
+    "end_bound": 6383.75
+  },
+  "touch": {
+    "touch_id": "TCH0032727",
+    "fvg_hour_id": "FH04239",
+    "fvg_direction": "down",
+    "fvg_start_time": "2017-11-22T05:00",
+    "window_start": "2017-11-22T06:00",
+    "window_end": "2017-11-22T09:00",
+    "ts_event": "2017-11-22 06:15",
+    "price_touched": 6383.0,
+    "bound_broken": 6383.75,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5109013",
+      "direction": "down",
+      "start_time": "2017-11-22T07:35",
+      "begin_bound": 6383.5,
+      "end_bound": 6383.25,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 5
+    },
+    {
+      "fvg_5m_id": "F5109015",
+      "direction": "down",
+      "start_time": "2017-11-22T08:20",
+      "begin_bound": 6383.0,
+      "end_bound": 6382.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5109016",
+      "direction": "down",
+      "start_time": "2017-11-22T09:10",
+      "begin_bound": 6380.5,
+      "end_bound": 6380.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0073938",
+      "ts_event": "2017-11-22 08:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 6384.5,
+      "broken_level": 6383.25,
+      "source_hilo_id": "HL0521474"
+    },
+    {
+      "bos_id": "BOS0073939",
+      "ts_event": "2017-11-22 09:05",
+      "bos_direction": "bos_down",
+      "trigger_close": 6378.75,
+      "broken_level": 6380.5,
+      "source_hilo_id": "HL0521486"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5109016",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2017-11-22 09:15",
+      "entry_price": 6378.0,
+      "stop_loss": 6386.5,
+      "take_profit": 6369.5,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2017-11-22 12:00",
+      "exit_price": 6386.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 3,
+    "count_bos_5m": 2,
+    "count_signals": 1
+  }
+}

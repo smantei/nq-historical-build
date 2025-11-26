@@ -1,0 +1,97 @@
+{
+  "event_id": "EV00637",
+  "window": {
+    "hourly_fvg_id": "FH03812",
+    "hourly_start_time": "2017-02-20T07:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2017-02-20 08:15",
+    "bos_window_end": "2017-02-20 11:15"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03812",
+    "direction": "up",
+    "start_time": "2017-02-20T07:00",
+    "begin_bound": 5328.75,
+    "end_bound": 5336.75
+  },
+  "touch": {
+    "touch_id": "TCH0029949",
+    "fvg_hour_id": "FH03812",
+    "fvg_direction": "up",
+    "fvg_start_time": "2017-02-20T07:00",
+    "window_start": "2017-02-20T08:00",
+    "window_end": "2017-02-20T11:00",
+    "ts_event": "2017-02-20 08:15",
+    "price_touched": 5336.0,
+    "bound_broken": 5336.75,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F598217",
+      "direction": "up",
+      "start_time": "2017-02-20T10:00",
+      "begin_bound": 5330.25,
+      "end_bound": 5330.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F598220",
+      "direction": "up",
+      "start_time": "2017-02-20T11:15",
+      "begin_bound": 5330.0,
+      "end_bound": 5330.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0066322",
+      "ts_event": "2017-02-20 08:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 5333.75,
+      "broken_level": 5336.75,
+      "source_hilo_id": "HL0468178"
+    },
+    {
+      "bos_id": "BOS0066323",
+      "ts_event": "2017-02-20 09:10",
+      "bos_direction": "bos_down",
+      "trigger_close": 5332.75,
+      "broken_level": 5334.0,
+      "source_hilo_id": "HL0468198"
+    },
+    {
+      "bos_id": "BOS0066324",
+      "ts_event": "2017-02-20 09:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 5331.0,
+      "broken_level": 5330.75,
+      "source_hilo_id": "HL0468209"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F598217",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2017-02-20 10:10",
+      "entry_price": 5331.0,
+      "stop_loss": 5327.0,
+      "take_profit": 5335.0,
+      "exit_signal": "sell_l_prof",
+      "exit_ts": "2017-02-20 14:20",
+      "exit_price": 5335.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

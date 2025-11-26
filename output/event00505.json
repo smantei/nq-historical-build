@@ -1,0 +1,154 @@
+{
+  "event_id": "EV00505",
+  "window": {
+    "hourly_fvg_id": "FH03022",
+    "hourly_start_time": "2015-09-24T11:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2015-09-24 13:30",
+    "bos_window_end": "2015-09-24 16:30"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03022",
+    "direction": "down",
+    "start_time": "2015-09-24T11:00",
+    "begin_bound": 4243.5,
+    "end_bound": 4231.5
+  },
+  "touch": {
+    "touch_id": "TCH0024249",
+    "fvg_hour_id": "FH03022",
+    "fvg_direction": "down",
+    "fvg_start_time": "2015-09-24T11:00",
+    "window_start": "2015-09-24T12:00",
+    "window_end": "2015-09-24T15:00",
+    "ts_event": "2015-09-24 13:30",
+    "price_touched": 4221.5,
+    "bound_broken": 4231.5,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F577397",
+      "direction": "down",
+      "start_time": "2015-09-24T13:45",
+      "begin_bound": 4221.25,
+      "end_bound": 4213.25,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F577398",
+      "direction": "down",
+      "start_time": "2015-09-24T13:50",
+      "begin_bound": 4210.75,
+      "end_bound": 4210.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F577400",
+      "direction": "down",
+      "start_time": "2015-09-24T14:40",
+      "begin_bound": 4198.25,
+      "end_bound": 4197.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0051481",
+      "ts_event": "2015-09-24 13:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 4231.5,
+      "broken_level": 4224.25,
+      "source_hilo_id": "HL0369969"
+    },
+    {
+      "bos_id": "BOS0051482",
+      "ts_event": "2015-09-24 13:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 4213.25,
+      "broken_level": 4215.25,
+      "source_hilo_id": "HL0369971"
+    },
+    {
+      "bos_id": "BOS0051483",
+      "ts_event": "2015-09-24 14:25",
+      "bos_direction": "bos_down",
+      "trigger_close": 4200.0,
+      "broken_level": 4204.25,
+      "source_hilo_id": "HL0369979"
+    },
+    {
+      "bos_id": "BOS0051484",
+      "ts_event": "2015-09-24 14:35",
+      "bos_direction": "bos_down",
+      "trigger_close": 4195.75,
+      "broken_level": 4197.75,
+      "source_hilo_id": "HL0369984"
+    },
+    {
+      "bos_id": "BOS0051485",
+      "ts_event": "2015-09-24 15:00",
+      "bos_direction": "bos_down",
+      "trigger_close": 4187.25,
+      "broken_level": 4190.25,
+      "source_hilo_id": "HL0369989"
+    },
+    {
+      "bos_id": "BOS0051486",
+      "ts_event": "2015-09-24 15:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 4194.75,
+      "broken_level": 4194.5,
+      "source_hilo_id": "HL0369990"
+    },
+    {
+      "bos_id": "BOS0051487",
+      "ts_event": "2015-09-24 15:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 4198.5,
+      "broken_level": 4196.5,
+      "source_hilo_id": "HL0369992"
+    },
+    {
+      "bos_id": "BOS0051488",
+      "ts_event": "2015-09-24 15:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 4204.25,
+      "broken_level": 4203.0,
+      "source_hilo_id": "HL0369999"
+    },
+    {
+      "bos_id": "BOS0051489",
+      "ts_event": "2015-09-24 16:20",
+      "bos_direction": "bos_up",
+      "trigger_close": 4210.25,
+      "broken_level": 4210.0,
+      "source_hilo_id": "HL0370003"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F577397",
+      "direction": "down",
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2015-09-24 14:00",
+      "entry_price": 4209.75,
+      "stop_loss": 4234.5,
+      "take_profit": 4185.0,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2015-09-24 18:40",
+      "exit_price": 4234.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 3,
+    "count_bos_5m": 9,
+    "count_signals": 1
+  }
+}

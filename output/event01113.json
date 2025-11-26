@@ -1,0 +1,97 @@
+{
+  "event_id": "EV01113",
+  "window": {
+    "hourly_fvg_id": "FH06601",
+    "hourly_start_time": "2021-10-13T09:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2021-10-13 11:05",
+    "bos_window_end": "2021-10-13 14:05"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06601",
+    "direction": "up",
+    "start_time": "2021-10-13T09:00",
+    "begin_bound": 14641.0,
+    "end_bound": 14701.0
+  },
+  "touch": {
+    "touch_id": "TCH0049957",
+    "fvg_hour_id": "FH06601",
+    "fvg_direction": "up",
+    "fvg_start_time": "2021-10-13T09:00",
+    "window_start": "2021-10-13T10:00",
+    "window_end": "2021-10-13T13:00",
+    "ts_event": "2021-10-13 11:05",
+    "price_touched": 14694.25,
+    "bound_broken": 14701.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5162843",
+      "direction": "up",
+      "start_time": "2021-10-13T11:30",
+      "begin_bound": 14706.0,
+      "end_bound": 14714.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 4
+    },
+    {
+      "fvg_5m_id": "F5162849",
+      "direction": "up",
+      "start_time": "2021-10-13T13:20",
+      "begin_bound": 14711.0,
+      "end_bound": 14720.75,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0118642",
+      "ts_event": "2021-10-13 12:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 14713.5,
+      "broken_level": 14717.5,
+      "source_hilo_id": "HL0793913"
+    },
+    {
+      "bos_id": "BOS0118643",
+      "ts_event": "2021-10-13 12:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 14680.0,
+      "broken_level": 14706.5,
+      "source_hilo_id": "HL0793916"
+    },
+    {
+      "bos_id": "BOS0118644",
+      "ts_event": "2021-10-13 13:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 14710.5,
+      "broken_level": 14691.25,
+      "source_hilo_id": "HL0793922"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5162849",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2021-10-13 13:30",
+      "entry_price": 14750.0,
+      "stop_loss": 14647.75,
+      "take_profit": 14852.25,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2021-10-13 20:55",
+      "exit_price": 14767.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

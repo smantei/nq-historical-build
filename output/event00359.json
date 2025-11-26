@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00359",
+  "window": {
+    "hourly_fvg_id": "FH02041",
+    "hourly_start_time": "2014-01-03T06:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2014-01-03 07:50",
+    "bos_window_end": "2014-01-03 10:50"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH02041",
+    "direction": "down",
+    "start_time": "2014-01-03T06:00",
+    "begin_bound": 3557.5,
+    "end_bound": 3551.5
+  },
+  "touch": {
+    "touch_id": "TCH0016511",
+    "fvg_hour_id": "FH02041",
+    "fvg_direction": "down",
+    "fvg_start_time": "2014-01-03T06:00",
+    "window_start": "2014-01-03T07:00",
+    "window_end": "2014-01-03T10:00",
+    "ts_event": "2014-01-03 07:50",
+    "price_touched": 3550.5,
+    "bound_broken": 3551.5,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F552763",
+      "direction": "down",
+      "start_time": "2014-01-03T08:20",
+      "begin_bound": 3550.0,
+      "end_bound": 3549.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0034511",
+      "ts_event": "2014-01-03 08:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 3549.0,
+      "broken_level": 3549.5,
+      "source_hilo_id": "HL0250215"
+    },
+    {
+      "bos_id": "BOS0034512",
+      "ts_event": "2014-01-03 08:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 3551.25,
+      "broken_level": 3550.0,
+      "source_hilo_id": "HL0250225"
+    },
+    {
+      "bos_id": "BOS0034513",
+      "ts_event": "2014-01-03 09:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 3558.75,
+      "broken_level": 3558.5,
+      "source_hilo_id": "HL0250240"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F552763",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2014-01-03 08:30",
+      "entry_price": 3549.25,
+      "stop_loss": 3554.5,
+      "take_profit": 3544.0,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2014-01-03 09:00",
+      "exit_price": 3554.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

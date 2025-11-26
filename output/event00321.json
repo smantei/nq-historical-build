@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00321",
+  "window": {
+    "hourly_fvg_id": "FH01819",
+    "hourly_start_time": "2013-07-19T14:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2013-07-19 15:10",
+    "bos_window_end": "2013-07-19 18:10"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH01819",
+    "direction": "down",
+    "start_time": "2013-07-19T14:00",
+    "begin_bound": 3043.5,
+    "end_bound": 3041.75
+  },
+  "touch": {
+    "touch_id": "TCH0014530",
+    "fvg_hour_id": "FH01819",
+    "fvg_direction": "down",
+    "fvg_start_time": "2013-07-19T14:00",
+    "window_start": "2013-07-19T15:00",
+    "window_end": "2013-07-19T18:00",
+    "ts_event": "2013-07-19 15:10",
+    "price_touched": 3039.75,
+    "bound_broken": 3041.75,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F546273",
+      "direction": "down",
+      "start_time": "2013-07-19T15:45",
+      "begin_bound": 3035.0,
+      "end_bound": 3034.25,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 5
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0030395",
+      "ts_event": "2013-07-19 15:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 3041.75,
+      "broken_level": 3041.0,
+      "source_hilo_id": "HL0218817"
+    },
+    {
+      "bos_id": "BOS0030396",
+      "ts_event": "2013-07-19 15:35",
+      "bos_direction": "bos_down",
+      "trigger_close": 3035.25,
+      "broken_level": 3037.25,
+      "source_hilo_id": "HL0218819"
+    },
+    {
+      "bos_id": "BOS0030397",
+      "ts_event": "2013-07-19 16:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 3032.75,
+      "broken_level": 3033.25,
+      "source_hilo_id": "HL0218837"
+    },
+    {
+      "bos_id": "BOS0030398",
+      "ts_event": "2013-07-19 17:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 3035.25,
+      "broken_level": 3035.0,
+      "source_hilo_id": "HL0218849"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F546273",
+      "direction": "down",
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 5,
+      "entry_ts": "2013-07-19 16:10",
+      "entry_price": 3033.5,
+      "stop_loss": 3043.0,
+      "take_profit": 3024.0,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2013-07-19 20:10",
+      "exit_price": 3043.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

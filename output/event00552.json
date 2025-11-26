@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00552",
+  "window": {
+    "hourly_fvg_id": "FH03308",
+    "hourly_start_time": "2016-03-09T14:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2016-03-09 15:35",
+    "bos_window_end": "2016-03-09 18:35"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03308",
+    "direction": "down",
+    "start_time": "2016-03-09T14:00",
+    "begin_bound": 4289.25,
+    "end_bound": 4288.5
+  },
+  "touch": {
+    "touch_id": "TCH0026382",
+    "fvg_hour_id": "FH03308",
+    "fvg_direction": "down",
+    "fvg_start_time": "2016-03-09T14:00",
+    "window_start": "2016-03-09T15:00",
+    "window_end": "2016-03-09T18:00",
+    "ts_event": "2016-03-09 15:35",
+    "price_touched": 4278.25,
+    "bound_broken": 4288.5,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F584322",
+      "direction": "down",
+      "start_time": "2016-03-09T17:50",
+      "begin_bound": 4278.25,
+      "end_bound": 4276.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0056595",
+      "ts_event": "2016-03-09 17:20",
+      "bos_direction": "bos_up",
+      "trigger_close": 4287.5,
+      "broken_level": 4286.75,
+      "source_hilo_id": "HL0401716"
+    },
+    {
+      "bos_id": "BOS0056596",
+      "ts_event": "2016-03-09 17:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 4278.5,
+      "broken_level": 4281.5,
+      "source_hilo_id": "HL0401717"
+    },
+    {
+      "bos_id": "BOS0056597",
+      "ts_event": "2016-03-09 18:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 4280.0,
+      "broken_level": 4278.25,
+      "source_hilo_id": "HL0401726"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F584322",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2016-03-09 17:55",
+      "entry_price": 4274.75,
+      "stop_loss": 4292.75,
+      "take_profit": 4256.75,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2016-03-09 19:05",
+      "exit_price": 4292.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

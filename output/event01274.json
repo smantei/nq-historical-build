@@ -1,0 +1,96 @@
+{
+  "event_id": "EV01274",
+  "window": {
+    "hourly_fvg_id": "FH07572",
+    "hourly_start_time": "2023-06-01T18:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2023-06-01 19:30",
+    "bos_window_end": "2023-06-01 22:30"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH07572",
+    "direction": "up",
+    "start_time": "2023-06-01T18:00",
+    "begin_bound": 14323.75,
+    "end_bound": 14474.5
+  },
+  "touch": {
+    "touch_id": "TCH0056846",
+    "fvg_hour_id": "FH07572",
+    "fvg_direction": "up",
+    "fvg_start_time": "2023-06-01T18:00",
+    "window_start": "2023-06-01T19:00",
+    "window_end": "2023-06-01T22:00",
+    "ts_event": "2023-06-01 19:30",
+    "price_touched": 14451.75,
+    "bound_broken": 14474.5,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5186272",
+      "direction": "up",
+      "start_time": "2023-06-01T20:05",
+      "begin_bound": 14475.25,
+      "end_bound": 14485.25,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 4
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0138286",
+      "ts_event": "2023-06-01 19:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 14459.75,
+      "broken_level": 14478.75,
+      "source_hilo_id": "HL0909751"
+    },
+    {
+      "bos_id": "BOS0138287",
+      "ts_event": "2023-06-01 19:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 14473.25,
+      "broken_level": 14470.5,
+      "source_hilo_id": "HL0909766"
+    },
+    {
+      "bos_id": "BOS0138288",
+      "ts_event": "2023-06-01 20:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 14498.5,
+      "broken_level": 14495.75,
+      "source_hilo_id": "HL0909775"
+    },
+    {
+      "bos_id": "BOS0138289",
+      "ts_event": "2023-06-01 22:00",
+      "bos_direction": "bos_down",
+      "trigger_close": 14492.25,
+      "broken_level": 14494.25,
+      "source_hilo_id": "HL0909778"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5186272",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 4,
+      "entry_ts": "2023-06-01 20:25",
+      "entry_price": 14488.75,
+      "stop_loss": 14432.75,
+      "take_profit": 14544.75,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2023-06-01 20:55",
+      "exit_price": 14496.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

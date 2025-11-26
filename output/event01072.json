@@ -1,0 +1,89 @@
+{
+  "event_id": "EV01072",
+  "window": {
+    "hourly_fvg_id": "FH06414",
+    "hourly_start_time": "2021-06-29T17:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2021-06-29 18:40",
+    "bos_window_end": "2021-06-29 21:40"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06414",
+    "direction": "up",
+    "start_time": "2021-06-29T17:00",
+    "begin_bound": 14524.5,
+    "end_bound": 14537.5
+  },
+  "touch": {
+    "touch_id": "TCH0048421",
+    "fvg_hour_id": "FH06414",
+    "fvg_direction": "up",
+    "fvg_start_time": "2021-06-29T17:00",
+    "window_start": "2021-06-29T18:00",
+    "window_end": "2021-06-29T21:00",
+    "ts_event": "2021-06-29 18:40",
+    "price_touched": 14536.0,
+    "bound_broken": 14537.5,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5158786",
+      "direction": "up",
+      "start_time": "2021-06-29T18:55",
+      "begin_bound": 14540.75,
+      "end_bound": 14542.75,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5158788",
+      "direction": "up",
+      "start_time": "2021-06-29T20:10",
+      "begin_bound": 14575.75,
+      "end_bound": 14579.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0115233",
+      "ts_event": "2021-06-29 19:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 14553.5,
+      "broken_level": 14551.5,
+      "source_hilo_id": "HL0773115"
+    },
+    {
+      "bos_id": "BOS0115234",
+      "ts_event": "2021-06-29 19:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 14564.0,
+      "broken_level": 14560.75,
+      "source_hilo_id": "HL0773124"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5158788",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2021-06-29 20:15",
+      "entry_price": 14582.5,
+      "stop_loss": 14529.5,
+      "take_profit": 14635.5,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2021-06-29 20:55",
+      "exit_price": 14582.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 2,
+    "count_signals": 1
+  }
+}

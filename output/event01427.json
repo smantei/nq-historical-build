@@ -1,0 +1,173 @@
+{
+  "event_id": "EV01427",
+  "window": {
+    "hourly_fvg_id": "FH08509",
+    "hourly_start_time": "2024-12-10T12:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2024-12-10 13:35",
+    "bos_window_end": "2024-12-10 16:35"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH08509",
+    "direction": "up",
+    "start_time": "2024-12-10T12:00",
+    "begin_bound": 21497.75,
+    "end_bound": 21506.5
+  },
+  "touch": {
+    "touch_id": "TCH0063344",
+    "fvg_hour_id": "FH08509",
+    "fvg_direction": "up",
+    "fvg_start_time": "2024-12-10T12:00",
+    "window_start": "2024-12-10T13:00",
+    "window_end": "2024-12-10T16:00",
+    "ts_event": "2024-12-10 13:35",
+    "price_touched": 21502.0,
+    "bound_broken": 21506.5,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5207603",
+      "direction": "up",
+      "start_time": "2024-12-10T14:10",
+      "begin_bound": 21504.75,
+      "end_bound": 21514.75,
+      "index_first_touch": 4,
+      "index_valid_close_after_touch": 5
+    },
+    {
+      "fvg_5m_id": "F5207604",
+      "direction": "up",
+      "start_time": "2024-12-10T14:15",
+      "begin_bound": 21516.5,
+      "end_bound": 21518.25,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 4
+    },
+    {
+      "fvg_5m_id": "F5207605",
+      "direction": "up",
+      "start_time": "2024-12-10T14:20",
+      "begin_bound": 21522.5,
+      "end_bound": 21525.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    },
+    {
+      "fvg_5m_id": "F5207606",
+      "direction": "up",
+      "start_time": "2024-12-10T14:40",
+      "begin_bound": 21533.25,
+      "end_bound": 21536.5,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5207607",
+      "direction": "up",
+      "start_time": "2024-12-10T14:45",
+      "begin_bound": 21541.75,
+      "end_bound": 21571.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5207609",
+      "direction": "up",
+      "start_time": "2024-12-10T15:05",
+      "begin_bound": 21548.25,
+      "end_bound": 21569.25,
+      "index_first_touch": 4,
+      "index_valid_close_after_touch": 5
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0156332",
+      "ts_event": "2024-12-10 13:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 21497.75,
+      "broken_level": 21502.0,
+      "source_hilo_id": "HL1017992"
+    },
+    {
+      "bos_id": "BOS0156333",
+      "ts_event": "2024-12-10 14:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 21516.0,
+      "broken_level": 21513.25,
+      "source_hilo_id": "HL1017993"
+    },
+    {
+      "bos_id": "BOS0156334",
+      "ts_event": "2024-12-10 14:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 21532.5,
+      "broken_level": 21532.25,
+      "source_hilo_id": "HL1018000"
+    },
+    {
+      "bos_id": "BOS0156335",
+      "ts_event": "2024-12-10 14:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 21540.75,
+      "broken_level": 21535.75,
+      "source_hilo_id": "HL1018002"
+    },
+    {
+      "bos_id": "BOS0156336",
+      "ts_event": "2024-12-10 15:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 21593.5,
+      "broken_level": 21589.25,
+      "source_hilo_id": "HL1018005"
+    },
+    {
+      "bos_id": "BOS0156337",
+      "ts_event": "2024-12-10 15:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 21523.5,
+      "broken_level": 21544.25,
+      "source_hilo_id": "HL1018014"
+    },
+    {
+      "bos_id": "BOS0156338",
+      "ts_event": "2024-12-10 16:05",
+      "bos_direction": "bos_down",
+      "trigger_close": 21475.5,
+      "broken_level": 21487.75,
+      "source_hilo_id": "HL1018020"
+    },
+    {
+      "bos_id": "BOS0156339",
+      "ts_event": "2024-12-10 16:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 21467.25,
+      "broken_level": 21469.75,
+      "source_hilo_id": "HL1018022"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5207605",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2024-12-10 14:25",
+      "entry_price": 21532.5,
+      "stop_loss": 21490.25,
+      "take_profit": 21574.75,
+      "exit_signal": "sell_l_prof",
+      "exit_ts": "2024-12-10 14:40",
+      "exit_price": 21574.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 6,
+    "count_bos_5m": 8,
+    "count_signals": 1
+  }
+}

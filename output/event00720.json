@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00720",
+  "window": {
+    "hourly_fvg_id": "FH04323",
+    "hourly_start_time": "2018-01-04T13:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2018-01-04 14:40",
+    "bos_window_end": "2018-01-04 17:40"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH04323",
+    "direction": "up",
+    "start_time": "2018-01-04T13:00",
+    "begin_bound": 6598.5,
+    "end_bound": 6601.25
+  },
+  "touch": {
+    "touch_id": "TCH0033426",
+    "fvg_hour_id": "FH04323",
+    "fvg_direction": "up",
+    "fvg_start_time": "2018-01-04T13:00",
+    "window_start": "2018-01-04T14:00",
+    "window_end": "2018-01-04T17:00",
+    "ts_event": "2018-01-04 14:40",
+    "price_touched": 6590.25,
+    "bound_broken": 6601.25,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5110629",
+      "direction": "up",
+      "start_time": "2018-01-04T15:40",
+      "begin_bound": 6607.5,
+      "end_bound": 6607.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0075101",
+      "ts_event": "2018-01-04 14:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 6592.5,
+      "broken_level": 6601.5,
+      "source_hilo_id": "HL0529381"
+    },
+    {
+      "bos_id": "BOS0075102",
+      "ts_event": "2018-01-04 15:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 6607.0,
+      "broken_level": 6604.25,
+      "source_hilo_id": "HL0529390"
+    },
+    {
+      "bos_id": "BOS0075103",
+      "ts_event": "2018-01-04 15:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 6607.0,
+      "broken_level": 6607.75,
+      "source_hilo_id": "HL0529396"
+    },
+    {
+      "bos_id": "BOS0075104",
+      "ts_event": "2018-01-04 17:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 6604.25,
+      "broken_level": 6600.75,
+      "source_hilo_id": "HL0529410"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5110629",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2018-01-04 15:45",
+      "entry_price": 6609.75,
+      "stop_loss": 6585.75,
+      "take_profit": 6633.75,
+      "exit_signal": "sell_l_loss_session_close",
+      "exit_ts": "2018-01-04 20:55",
+      "exit_price": 6596.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

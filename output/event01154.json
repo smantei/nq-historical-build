@@ -1,0 +1,156 @@
+{
+  "event_id": "EV01154",
+  "window": {
+    "hourly_fvg_id": "FH06834",
+    "hourly_start_time": "2022-03-10T12:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2022-03-10 13:30",
+    "bos_window_end": "2022-03-10 16:30"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06834",
+    "direction": "down",
+    "start_time": "2022-03-10T12:00",
+    "begin_bound": 13581.25,
+    "end_bound": 13579.75
+  },
+  "touch": {
+    "touch_id": "TCH0051907",
+    "fvg_hour_id": "FH06834",
+    "fvg_direction": "down",
+    "fvg_start_time": "2022-03-10T12:00",
+    "window_start": "2022-03-10T13:00",
+    "window_end": "2022-03-10T16:00",
+    "ts_event": "2022-03-10 13:30",
+    "price_touched": 13533.0,
+    "bound_broken": 13579.75,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5168576",
+      "direction": "down",
+      "start_time": "2022-03-10T13:50",
+      "begin_bound": 13554.25,
+      "end_bound": 13538.25,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5168577",
+      "direction": "down",
+      "start_time": "2022-03-10T14:35",
+      "begin_bound": 13542.0,
+      "end_bound": 13532.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5168580",
+      "direction": "down",
+      "start_time": "2022-03-10T15:35",
+      "begin_bound": 13516.75,
+      "end_bound": 13486.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    },
+    {
+      "fvg_5m_id": "F5168582",
+      "direction": "down",
+      "start_time": "2022-03-10T16:00",
+      "begin_bound": 13448.25,
+      "end_bound": 13445.25,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5168583",
+      "direction": "down",
+      "start_time": "2022-03-10T16:25",
+      "begin_bound": 13420.0,
+      "end_bound": 13417.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0123571",
+      "ts_event": "2022-03-10 14:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 13542.0,
+      "broken_level": 13539.0,
+      "source_hilo_id": "HL0822715"
+    },
+    {
+      "bos_id": "BOS0123572",
+      "ts_event": "2022-03-10 14:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 13564.75,
+      "broken_level": 13547.0,
+      "source_hilo_id": "HL0822718"
+    },
+    {
+      "bos_id": "BOS0123573",
+      "ts_event": "2022-03-10 14:35",
+      "bos_direction": "bos_down",
+      "trigger_close": 13493.25,
+      "broken_level": 13530.0,
+      "source_hilo_id": "HL0822719"
+    },
+    {
+      "bos_id": "BOS0123574",
+      "ts_event": "2022-03-10 14:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 13578.5,
+      "broken_level": 13552.75,
+      "source_hilo_id": "HL0822723"
+    },
+    {
+      "bos_id": "BOS0123575",
+      "ts_event": "2022-03-10 15:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 13605.25,
+      "broken_level": 13594.25,
+      "source_hilo_id": "HL0822726"
+    },
+    {
+      "bos_id": "BOS0123576",
+      "ts_event": "2022-03-10 15:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 13474.75,
+      "broken_level": 13502.5,
+      "source_hilo_id": "HL0822727"
+    },
+    {
+      "bos_id": "BOS0123577",
+      "ts_event": "2022-03-10 15:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 13451.5,
+      "broken_level": 13470.75,
+      "source_hilo_id": "HL0822735"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5168577",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2022-03-10 14:45",
+      "entry_price": 13500.75,
+      "stop_loss": 13623.25,
+      "take_profit": 13378.25,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2022-03-10 19:45",
+      "exit_price": 13623.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 5,
+    "count_bos_5m": 7,
+    "count_signals": 1
+  }
+}

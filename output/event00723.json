@@ -1,0 +1,153 @@
+{
+  "event_id": "EV00723",
+  "window": {
+    "hourly_fvg_id": "FH04346",
+    "hourly_start_time": "2018-01-19T10:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2018-01-19 12:55",
+    "bos_window_end": "2018-01-19 15:55"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH04346",
+    "direction": "up",
+    "start_time": "2018-01-19T10:00",
+    "begin_bound": 6818.0,
+    "end_bound": 6842.25
+  },
+  "touch": {
+    "touch_id": "TCH0033539",
+    "fvg_hour_id": "FH04346",
+    "fvg_direction": "up",
+    "fvg_start_time": "2018-01-19T10:00",
+    "window_start": "2018-01-19T11:00",
+    "window_end": "2018-01-19T14:00",
+    "ts_event": "2018-01-19 12:55",
+    "price_touched": 6842.0,
+    "bound_broken": 6842.25,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5111232",
+      "direction": "up",
+      "start_time": "2018-01-19T14:05",
+      "begin_bound": 6835.5,
+      "end_bound": 6836.75,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 4
+    },
+    {
+      "fvg_5m_id": "F5111236",
+      "direction": "up",
+      "start_time": "2018-01-19T15:30",
+      "begin_bound": 6824.75,
+      "end_bound": 6826.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0075549",
+      "ts_event": "2018-01-19 13:00",
+      "bos_direction": "bos_down",
+      "trigger_close": 6839.75,
+      "broken_level": 6842.0,
+      "source_hilo_id": "HL0532320"
+    },
+    {
+      "bos_id": "BOS0075550",
+      "ts_event": "2018-01-19 13:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 6834.5,
+      "broken_level": 6834.25,
+      "source_hilo_id": "HL0532326"
+    },
+    {
+      "bos_id": "BOS0075551",
+      "ts_event": "2018-01-19 13:45",
+      "bos_direction": "bos_down",
+      "trigger_close": 6827.25,
+      "broken_level": 6829.75,
+      "source_hilo_id": "HL0532327"
+    },
+    {
+      "bos_id": "BOS0075552",
+      "ts_event": "2018-01-19 14:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 6839.25,
+      "broken_level": 6837.5,
+      "source_hilo_id": "HL0532328"
+    },
+    {
+      "bos_id": "BOS0075553",
+      "ts_event": "2018-01-19 14:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 6841.75,
+      "broken_level": 6840.5,
+      "source_hilo_id": "HL0532334"
+    },
+    {
+      "bos_id": "BOS0075554",
+      "ts_event": "2018-01-19 14:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 6844.5,
+      "broken_level": 6843.0,
+      "source_hilo_id": "HL0532336"
+    },
+    {
+      "bos_id": "BOS0075555",
+      "ts_event": "2018-01-19 14:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 6854.25,
+      "broken_level": 6850.5,
+      "source_hilo_id": "HL0532339"
+    },
+    {
+      "bos_id": "BOS0075556",
+      "ts_event": "2018-01-19 14:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 6836.25,
+      "broken_level": 6839.5,
+      "source_hilo_id": "HL0532340"
+    },
+    {
+      "bos_id": "BOS0075557",
+      "ts_event": "2018-01-19 15:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 6831.75,
+      "broken_level": 6830.25,
+      "source_hilo_id": "HL0532348"
+    },
+    {
+      "bos_id": "BOS0075558",
+      "ts_event": "2018-01-19 15:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 6817.5,
+      "broken_level": 6823.0,
+      "source_hilo_id": "HL0532352"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5111232",
+      "direction": "up",
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 4,
+      "entry_ts": "2018-01-19 14:25",
+      "entry_price": 6844.5,
+      "stop_loss": 6824.5,
+      "take_profit": 6864.5,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2018-01-19 15:00",
+      "exit_price": 6824.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 10,
+    "count_signals": 1
+  }
+}

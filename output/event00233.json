@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00233",
+  "window": {
+    "hourly_fvg_id": "FH01365",
+    "hourly_start_time": "2012-10-09T15:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2012-10-09 16:10",
+    "bos_window_end": "2012-10-09 19:10"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH01365",
+    "direction": "down",
+    "start_time": "2012-10-09T15:00",
+    "begin_bound": 2754.25,
+    "end_bound": 2739.0
+  },
+  "touch": {
+    "touch_id": "TCH0010695",
+    "fvg_hour_id": "FH01365",
+    "fvg_direction": "down",
+    "fvg_start_time": "2012-10-09T15:00",
+    "window_start": "2012-10-09T16:00",
+    "window_end": "2012-10-09T19:00",
+    "ts_event": "2012-10-09 16:10",
+    "price_touched": 2736.5,
+    "bound_broken": 2739.0,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F535324",
+      "direction": "down",
+      "start_time": "2012-10-09T16:35",
+      "begin_bound": 2740.5,
+      "end_bound": 2737.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0023233",
+      "ts_event": "2012-10-09 16:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 2741.5,
+      "broken_level": 2738.0,
+      "source_hilo_id": "HL0165807"
+    },
+    {
+      "bos_id": "BOS0023234",
+      "ts_event": "2012-10-09 16:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 2737.25,
+      "broken_level": 2740.25,
+      "source_hilo_id": "HL0165812"
+    },
+    {
+      "bos_id": "BOS0023235",
+      "ts_event": "2012-10-09 17:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 2744.25,
+      "broken_level": 2744.0,
+      "source_hilo_id": "HL0165813"
+    },
+    {
+      "bos_id": "BOS0023236",
+      "ts_event": "2012-10-09 18:35",
+      "bos_direction": "bos_down",
+      "trigger_close": 2742.0,
+      "broken_level": 2742.75,
+      "source_hilo_id": "HL0165836"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F535324",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2012-10-09 16:40",
+      "entry_price": 2736.75,
+      "stop_loss": 2745.25,
+      "take_profit": 2728.25,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2012-10-09 17:50",
+      "exit_price": 2745.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

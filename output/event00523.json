@@ -1,0 +1,137 @@
+{
+  "event_id": "EV00523",
+  "window": {
+    "hourly_fvg_id": "FH03149",
+    "hourly_start_time": "2015-12-08T16:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2015-12-08 17:15",
+    "bos_window_end": "2015-12-08 20:15"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03149",
+    "direction": "up",
+    "start_time": "2015-12-08T16:00",
+    "begin_bound": 4667.75,
+    "end_bound": 4680.5
+  },
+  "touch": {
+    "touch_id": "TCH0025168",
+    "fvg_hour_id": "FH03149",
+    "fvg_direction": "up",
+    "fvg_start_time": "2015-12-08T16:00",
+    "window_start": "2015-12-08T17:00",
+    "window_end": "2015-12-08T20:00",
+    "ts_event": "2015-12-08 17:15",
+    "price_touched": 4677.0,
+    "bound_broken": 4680.5,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F580490",
+      "direction": "up",
+      "start_time": "2015-12-08T17:40",
+      "begin_bound": 4683.5,
+      "end_bound": 4683.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F580492",
+      "direction": "up",
+      "start_time": "2015-12-08T18:35",
+      "begin_bound": 4686.25,
+      "end_bound": 4689.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0053727",
+      "ts_event": "2015-12-08 17:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 4678.5,
+      "broken_level": 4681.5,
+      "source_hilo_id": "HL0384377"
+    },
+    {
+      "bos_id": "BOS0053728",
+      "ts_event": "2015-12-08 17:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 4687.0,
+      "broken_level": 4686.25,
+      "source_hilo_id": "HL0384382"
+    },
+    {
+      "bos_id": "BOS0053729",
+      "ts_event": "2015-12-08 17:55",
+      "bos_direction": "bos_up",
+      "trigger_close": 4690.75,
+      "broken_level": 4688.0,
+      "source_hilo_id": "HL0384385"
+    },
+    {
+      "bos_id": "BOS0053730",
+      "ts_event": "2015-12-08 18:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 4679.25,
+      "broken_level": 4680.0,
+      "source_hilo_id": "HL0384386"
+    },
+    {
+      "bos_id": "BOS0053731",
+      "ts_event": "2015-12-08 18:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 4693.75,
+      "broken_level": 4693.0,
+      "source_hilo_id": "HL0384396"
+    },
+    {
+      "bos_id": "BOS0053732",
+      "ts_event": "2015-12-08 19:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 4699.25,
+      "broken_level": 4694.0,
+      "source_hilo_id": "HL0384399"
+    },
+    {
+      "bos_id": "BOS0053733",
+      "ts_event": "2015-12-08 19:45",
+      "bos_direction": "bos_up",
+      "trigger_close": 4703.0,
+      "broken_level": 4701.5,
+      "source_hilo_id": "HL0384408"
+    },
+    {
+      "bos_id": "BOS0053734",
+      "ts_event": "2015-12-08 20:00",
+      "bos_direction": "bos_down",
+      "trigger_close": 4695.25,
+      "broken_level": 4696.25,
+      "source_hilo_id": "HL0384409"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F580490",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2015-12-08 17:50",
+      "entry_price": 4687.75,
+      "stop_loss": 4676.25,
+      "take_profit": 4699.25,
+      "exit_signal": "sell_l_prof",
+      "exit_ts": "2015-12-08 19:00",
+      "exit_price": 4699.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 8,
+    "count_signals": 1
+  }
+}

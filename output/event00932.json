@@ -1,0 +1,155 @@
+{
+  "event_id": "EV00932",
+  "window": {
+    "hourly_fvg_id": "FH05521",
+    "hourly_start_time": "2020-01-08T11:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2020-01-08 13:50",
+    "bos_window_end": "2020-01-08 16:50"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH05521",
+    "direction": "up",
+    "start_time": "2020-01-08T11:00",
+    "begin_bound": 8845.0,
+    "end_bound": 8860.0
+  },
+  "touch": {
+    "touch_id": "TCH0042216",
+    "fvg_hour_id": "FH05521",
+    "fvg_direction": "up",
+    "fvg_start_time": "2020-01-08T11:00",
+    "window_start": "2020-01-08T12:00",
+    "window_end": "2020-01-08T15:00",
+    "ts_event": "2020-01-08 13:50",
+    "price_touched": 8858.0,
+    "bound_broken": 8860.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5138426",
+      "direction": "up",
+      "start_time": "2020-01-08T14:55",
+      "begin_bound": 8885.75,
+      "end_bound": 8888.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    },
+    {
+      "fvg_5m_id": "F5138430",
+      "direction": "up",
+      "start_time": "2020-01-08T16:10",
+      "begin_bound": 8873.25,
+      "end_bound": 8878.25,
+      "index_first_touch": 3,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F5138431",
+      "direction": "up",
+      "start_time": "2020-01-08T16:15",
+      "begin_bound": 8880.0,
+      "end_bound": 8880.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5138433",
+      "direction": "up",
+      "start_time": "2020-01-08T16:45",
+      "begin_bound": 8918.0,
+      "end_bound": 8925.25,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0097786",
+      "ts_event": "2020-01-08 14:25",
+      "bos_direction": "bos_down",
+      "trigger_close": 8861.0,
+      "broken_level": 8863.25,
+      "source_hilo_id": "HL0669972"
+    },
+    {
+      "bos_id": "BOS0097787",
+      "ts_event": "2020-01-08 14:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 8874.75,
+      "broken_level": 8868.75,
+      "source_hilo_id": "HL0669973"
+    },
+    {
+      "bos_id": "BOS0097788",
+      "ts_event": "2020-01-08 14:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 8889.5,
+      "broken_level": 8886.0,
+      "source_hilo_id": "HL0669977"
+    },
+    {
+      "bos_id": "BOS0097789",
+      "ts_event": "2020-01-08 15:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 8880.25,
+      "broken_level": 8883.25,
+      "source_hilo_id": "HL0669982"
+    },
+    {
+      "bos_id": "BOS0097790",
+      "ts_event": "2020-01-08 15:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 8873.75,
+      "broken_level": 8877.5,
+      "source_hilo_id": "HL0669987"
+    },
+    {
+      "bos_id": "BOS0097791",
+      "ts_event": "2020-01-08 16:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 8878.5,
+      "broken_level": 8873.75,
+      "source_hilo_id": "HL0669992"
+    },
+    {
+      "bos_id": "BOS0097792",
+      "ts_event": "2020-01-08 16:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 8897.5,
+      "broken_level": 8888.25,
+      "source_hilo_id": "HL0669996"
+    },
+    {
+      "bos_id": "BOS0097793",
+      "ts_event": "2020-01-08 16:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 8915.5,
+      "broken_level": 8906.0,
+      "source_hilo_id": "HL0669998"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5138426",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2020-01-08 15:00",
+      "entry_price": 8891.0,
+      "stop_loss": 8847.25,
+      "take_profit": 8934.75,
+      "exit_signal": "sell_l_prof",
+      "exit_ts": "2020-01-08 16:45",
+      "exit_price": 8934.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 4,
+    "count_bos_5m": 8,
+    "count_signals": 1
+  }
+}

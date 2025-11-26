@@ -1,0 +1,89 @@
+{
+  "event_id": "EV00424",
+  "window": {
+    "hourly_fvg_id": "FH02524",
+    "hourly_start_time": "2014-11-11T04:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2014-11-11 06:20",
+    "bos_window_end": "2014-11-11 09:20"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH02524",
+    "direction": "up",
+    "start_time": "2014-11-11T04:00",
+    "begin_bound": 4172.0,
+    "end_bound": 4174.25
+  },
+  "touch": {
+    "touch_id": "TCH0020581",
+    "fvg_hour_id": "FH02524",
+    "fvg_direction": "up",
+    "fvg_start_time": "2014-11-11T04:00",
+    "window_start": "2014-11-11T05:00",
+    "window_end": "2014-11-11T08:00",
+    "ts_event": "2014-11-11 06:20",
+    "price_touched": 4174.0,
+    "bound_broken": 4174.25,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F564591",
+      "direction": "up",
+      "start_time": "2014-11-11T06:30",
+      "begin_bound": 4174.75,
+      "end_bound": 4176.75,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    },
+    {
+      "fvg_5m_id": "F564596",
+      "direction": "up",
+      "start_time": "2014-11-11T08:30",
+      "begin_bound": 4176.0,
+      "end_bound": 4176.25,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0042609",
+      "ts_event": "2014-11-11 06:55",
+      "bos_direction": "bos_down",
+      "trigger_close": 4176.5,
+      "broken_level": 4176.75,
+      "source_hilo_id": "HL0308710"
+    },
+    {
+      "bos_id": "BOS0042610",
+      "ts_event": "2014-11-11 07:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 4175.75,
+      "broken_level": 4175.25,
+      "source_hilo_id": "HL0308715"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F564596",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2014-11-11 08:45",
+      "entry_price": 4176.75,
+      "stop_loss": 4172.5,
+      "take_profit": 4181.0,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2014-11-11 14:30",
+      "exit_price": 4172.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 2,
+    "count_signals": 1
+  }
+}

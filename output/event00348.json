@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00348",
+  "window": {
+    "hourly_fvg_id": "FH01963",
+    "hourly_start_time": "2013-10-24T16:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2013-10-24 19:40",
+    "bos_window_end": "2013-10-24 22:40"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH01963",
+    "direction": "up",
+    "start_time": "2013-10-24T16:00",
+    "begin_bound": 3346.25,
+    "end_bound": 3352.25
+  },
+  "touch": {
+    "touch_id": "TCH0016042",
+    "fvg_hour_id": "FH01963",
+    "fvg_direction": "up",
+    "fvg_start_time": "2013-10-24T16:00",
+    "window_start": "2013-10-24T17:00",
+    "window_end": "2013-10-24T20:00",
+    "ts_event": "2013-10-24 19:40",
+    "price_touched": 3350.75,
+    "bound_broken": 3352.25,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F550235",
+      "direction": "up",
+      "start_time": "2013-10-24T20:40",
+      "begin_bound": 3375.5,
+      "end_bound": 3376.25,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0032856",
+      "ts_event": "2013-10-24 20:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 3367.25,
+      "broken_level": 3356.25,
+      "source_hilo_id": "HL0237578"
+    },
+    {
+      "bos_id": "BOS0032857",
+      "ts_event": "2013-10-24 22:10",
+      "bos_direction": "bos_down",
+      "trigger_close": 3375.25,
+      "broken_level": 3375.75,
+      "source_hilo_id": "HL0237591"
+    },
+    {
+      "bos_id": "BOS0032858",
+      "ts_event": "2013-10-24 22:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 3376.25,
+      "broken_level": 3375.75,
+      "source_hilo_id": "HL0237595"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F550235",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2013-10-24 20:50",
+      "entry_price": 3377.25,
+      "stop_loss": 3350.0,
+      "take_profit": 3404.5,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2013-10-24 20:55",
+      "exit_price": 3377.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

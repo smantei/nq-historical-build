@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00628",
+  "window": {
+    "hourly_fvg_id": "FH03736",
+    "hourly_start_time": "2016-12-28T07:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2016-12-28 08:00",
+    "bos_window_end": "2016-12-28 11:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03736",
+    "direction": "up",
+    "start_time": "2016-12-28T07:00",
+    "begin_bound": 4970.25,
+    "end_bound": 4973.0
+  },
+  "touch": {
+    "touch_id": "TCH0029432",
+    "fvg_hour_id": "FH03736",
+    "fvg_direction": "up",
+    "fvg_start_time": "2016-12-28T07:00",
+    "window_start": "2016-12-28T08:00",
+    "window_end": "2016-12-28T11:00",
+    "ts_event": "2016-12-28 08:00",
+    "price_touched": 4972.25,
+    "bound_broken": 4973.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F596242",
+      "direction": "up",
+      "start_time": "2016-12-28T09:45",
+      "begin_bound": 4975.5,
+      "end_bound": 4976.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 5
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0064928",
+      "ts_event": "2016-12-28 08:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 4975.75,
+      "broken_level": 4975.5,
+      "source_hilo_id": "HL0458131"
+    },
+    {
+      "bos_id": "BOS0064929",
+      "ts_event": "2016-12-28 09:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 4974.75,
+      "broken_level": 4974.5,
+      "source_hilo_id": "HL0458149"
+    },
+    {
+      "bos_id": "BOS0064930",
+      "ts_event": "2016-12-28 10:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 4975.0,
+      "broken_level": 4975.75,
+      "source_hilo_id": "HL0458162"
+    },
+    {
+      "bos_id": "BOS0064931",
+      "ts_event": "2016-12-28 11:00",
+      "bos_direction": "bos_down",
+      "trigger_close": 4974.5,
+      "broken_level": 4974.75,
+      "source_hilo_id": "HL0458166"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F596242",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 5,
+      "entry_ts": "2016-12-28 10:10",
+      "entry_price": 4977.25,
+      "stop_loss": 4971.5,
+      "take_profit": 4983.0,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2016-12-28 14:35",
+      "exit_price": 4971.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

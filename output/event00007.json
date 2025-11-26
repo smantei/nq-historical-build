@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00007",
+  "window": {
+    "hourly_fvg_id": "FH00038",
+    "hourly_start_time": "2010-07-06T06:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2010-07-06 07:00",
+    "bos_window_end": "2010-07-06 10:00"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH00038",
+    "direction": "up",
+    "start_time": "2010-07-06T06:00",
+    "begin_bound": 1712.75,
+    "end_bound": 1725.0
+  },
+  "touch": {
+    "touch_id": "TCH0000246",
+    "fvg_hour_id": "FH00038",
+    "fvg_direction": "up",
+    "fvg_start_time": "2010-07-06T06:00",
+    "window_start": "2010-07-06T07:00",
+    "window_end": "2010-07-06T10:00",
+    "ts_event": "2010-07-06 07:00",
+    "price_touched": 1725.0,
+    "bound_broken": 1725.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F501273",
+      "direction": "up",
+      "start_time": "2010-07-06T07:50",
+      "begin_bound": 1735.25,
+      "end_bound": 1735.5,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0000839",
+      "ts_event": "2010-07-06 07:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 1728.25,
+      "broken_level": 1727.0,
+      "source_hilo_id": "HL0005811"
+    },
+    {
+      "bos_id": "BOS0000840",
+      "ts_event": "2010-07-06 07:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 1732.75,
+      "broken_level": 1732.25,
+      "source_hilo_id": "HL0005825"
+    },
+    {
+      "bos_id": "BOS0000841",
+      "ts_event": "2010-07-06 09:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 1741.0,
+      "broken_level": 1740.25,
+      "source_hilo_id": "HL0005842"
+    },
+    {
+      "bos_id": "BOS0000842",
+      "ts_event": "2010-07-06 09:35",
+      "bos_direction": "bos_up",
+      "trigger_close": 1741.25,
+      "broken_level": 1740.25,
+      "source_hilo_id": "HL0005848"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F501273",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2010-07-06 08:05",
+      "entry_price": 1736.5,
+      "stop_loss": 1724.25,
+      "take_profit": 1748.75,
+      "exit_signal": "sell_l_prof",
+      "exit_ts": "2010-07-06 10:50",
+      "exit_price": 1748.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

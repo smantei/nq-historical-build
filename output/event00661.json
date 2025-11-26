@@ -1,0 +1,97 @@
+{
+  "event_id": "EV00661",
+  "window": {
+    "hourly_fvg_id": "FH03939",
+    "hourly_start_time": "2017-05-15T14:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2017-05-15 15:50",
+    "bos_window_end": "2017-05-15 18:50"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03939",
+    "direction": "up",
+    "start_time": "2017-05-15T14:00",
+    "begin_bound": 5690.0,
+    "end_bound": 5691.0
+  },
+  "touch": {
+    "touch_id": "TCH0030914",
+    "fvg_hour_id": "FH03939",
+    "fvg_direction": "up",
+    "fvg_start_time": "2017-05-15T14:00",
+    "window_start": "2017-05-15T15:00",
+    "window_end": "2017-05-15T18:00",
+    "ts_event": "2017-05-15 15:50",
+    "price_touched": 5691.0,
+    "bound_broken": 5691.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5101453",
+      "direction": "up",
+      "start_time": "2017-05-15T16:40",
+      "begin_bound": 5693.25,
+      "end_bound": 5693.5,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 5
+    },
+    {
+      "fvg_5m_id": "F5101455",
+      "direction": "up",
+      "start_time": "2017-05-15T17:15",
+      "begin_bound": 5695.5,
+      "end_bound": 5696.5,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0068578",
+      "ts_event": "2017-05-15 17:05",
+      "bos_direction": "bos_up",
+      "trigger_close": 5695.25,
+      "broken_level": 5695.0,
+      "source_hilo_id": "HL0484365"
+    },
+    {
+      "bos_id": "BOS0068579",
+      "ts_event": "2017-05-15 17:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 5700.5,
+      "broken_level": 5699.0,
+      "source_hilo_id": "HL0484376"
+    },
+    {
+      "bos_id": "BOS0068580",
+      "ts_event": "2017-05-15 18:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 5698.0,
+      "broken_level": 5698.5,
+      "source_hilo_id": "HL0484382"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5101455",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2017-05-15 17:25",
+      "entry_price": 5697.5,
+      "stop_loss": 5689.0,
+      "take_profit": 5706.0,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2017-05-15 20:55",
+      "exit_price": 5704.75
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

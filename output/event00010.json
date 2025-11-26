@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00010",
+  "window": {
+    "hourly_fvg_id": "FH00068",
+    "hourly_start_time": "2010-07-16T16:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2010-07-16 17:30",
+    "bos_window_end": "2010-07-16 20:30"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH00068",
+    "direction": "down",
+    "start_time": "2010-07-16T16:00",
+    "begin_bound": 1850.75,
+    "end_bound": 1816.5
+  },
+  "touch": {
+    "touch_id": "TCH0000463",
+    "fvg_hour_id": "FH00068",
+    "fvg_direction": "down",
+    "fvg_start_time": "2010-07-16T16:00",
+    "window_start": "2010-07-16T17:00",
+    "window_end": "2010-07-16T20:00",
+    "ts_event": "2010-07-16 17:30",
+    "price_touched": 1809.75,
+    "bound_broken": 1816.5,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F501765",
+      "direction": "down",
+      "start_time": "2010-07-16T19:25",
+      "begin_bound": 1805.5,
+      "end_bound": 1803.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 4
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0001161",
+      "ts_event": "2010-07-16 17:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 1816.75,
+      "broken_level": 1815.75,
+      "source_hilo_id": "HL0008158"
+    },
+    {
+      "bos_id": "BOS0001162",
+      "ts_event": "2010-07-16 17:50",
+      "bos_direction": "bos_down",
+      "trigger_close": 1807.25,
+      "broken_level": 1808.75,
+      "source_hilo_id": "HL0008160"
+    },
+    {
+      "bos_id": "BOS0001163",
+      "ts_event": "2010-07-16 19:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 1806.0,
+      "broken_level": 1807.5,
+      "source_hilo_id": "HL0008178"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F501765",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 4,
+      "entry_ts": "2010-07-16 19:45",
+      "entry_price": 1800.75,
+      "stop_loss": 1820.25,
+      "take_profit": 1781.25,
+      "exit_signal": "sell_s_loss_friday_close",
+      "exit_ts": "2010-07-16 20:10",
+      "exit_price": 1802.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

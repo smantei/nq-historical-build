@@ -1,0 +1,97 @@
+{
+  "event_id": "EV00842",
+  "window": {
+    "hourly_fvg_id": "FH04979",
+    "hourly_start_time": "2019-01-15T17:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2019-01-15 19:15",
+    "bos_window_end": "2019-01-15 22:15"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH04979",
+    "direction": "up",
+    "start_time": "2019-01-15T17:00",
+    "begin_bound": 6669.0,
+    "end_bound": 6670.0
+  },
+  "touch": {
+    "touch_id": "TCH0038174",
+    "fvg_hour_id": "FH04979",
+    "fvg_direction": "up",
+    "fvg_start_time": "2019-01-15T17:00",
+    "window_start": "2019-01-15T18:00",
+    "window_end": "2019-01-15T21:00",
+    "ts_event": "2019-01-15 19:15",
+    "price_touched": 6662.5,
+    "bound_broken": 6670.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5125365",
+      "direction": "up",
+      "start_time": "2019-01-15T20:45",
+      "begin_bound": 6672.25,
+      "end_bound": 6675.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2
+    },
+    {
+      "fvg_5m_id": "F5125366",
+      "direction": "up",
+      "start_time": "2019-01-15T21:40",
+      "begin_bound": 6676.5,
+      "end_bound": 6677.25,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 4
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0086789",
+      "ts_event": "2019-01-15 19:15",
+      "bos_direction": "bos_down",
+      "trigger_close": 6669.25,
+      "broken_level": 6672.0,
+      "source_hilo_id": "HL0601390"
+    },
+    {
+      "bos_id": "BOS0086790",
+      "ts_event": "2019-01-15 19:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 6654.25,
+      "broken_level": 6648.25,
+      "source_hilo_id": "HL0601396"
+    },
+    {
+      "bos_id": "BOS0086791",
+      "ts_event": "2019-01-15 20:40",
+      "bos_direction": "bos_up",
+      "trigger_close": 6675.5,
+      "broken_level": 6674.75,
+      "source_hilo_id": "HL0601403"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5125365",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 2,
+      "entry_ts": "2019-01-15 20:55",
+      "entry_price": 6681.75,
+      "stop_loss": 6628.25,
+      "take_profit": 6735.25,
+      "exit_signal": "sell_l_prof",
+      "exit_ts": "2019-01-16 14:45",
+      "exit_price": 6735.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 2,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}

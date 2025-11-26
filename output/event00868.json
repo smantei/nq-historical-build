@@ -1,0 +1,96 @@
+{
+  "event_id": "EV00868",
+  "window": {
+    "hourly_fvg_id": "FH05089",
+    "hourly_start_time": "2019-04-03T10:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2019-04-03 11:10",
+    "bos_window_end": "2019-04-03 14:10"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH05089",
+    "direction": "down",
+    "start_time": "2019-04-03T10:00",
+    "begin_bound": 7566.5,
+    "end_bound": 7564.0
+  },
+  "touch": {
+    "touch_id": "TCH0039090",
+    "fvg_hour_id": "FH05089",
+    "fvg_direction": "down",
+    "fvg_start_time": "2019-04-03T10:00",
+    "window_start": "2019-04-03T11:00",
+    "window_end": "2019-04-03T14:00",
+    "ts_event": "2019-04-03 11:10",
+    "price_touched": 7562.75,
+    "bound_broken": 7564.0,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5128214",
+      "direction": "down",
+      "start_time": "2019-04-03T13:35",
+      "begin_bound": 7566.25,
+      "end_bound": 7563.75,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 5
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0089229",
+      "ts_event": "2019-04-03 11:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 7563.75,
+      "broken_level": 7563.5,
+      "source_hilo_id": "HL0616467"
+    },
+    {
+      "bos_id": "BOS0089230",
+      "ts_event": "2019-04-03 12:00",
+      "bos_direction": "bos_up",
+      "trigger_close": 7572.25,
+      "broken_level": 7569.25,
+      "source_hilo_id": "HL0616476"
+    },
+    {
+      "bos_id": "BOS0089231",
+      "ts_event": "2019-04-03 12:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 7563.0,
+      "broken_level": 7565.5,
+      "source_hilo_id": "HL0616480"
+    },
+    {
+      "bos_id": "BOS0089232",
+      "ts_event": "2019-04-03 13:30",
+      "bos_direction": "bos_down",
+      "trigger_close": 7559.5,
+      "broken_level": 7564.5,
+      "source_hilo_id": "HL0616493"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5128214",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 5,
+      "entry_ts": "2019-04-03 14:00",
+      "entry_price": 7558.5,
+      "stop_loss": 7576.25,
+      "take_profit": 7540.75,
+      "exit_signal": "sell_s_loss",
+      "exit_ts": "2019-04-03 14:20",
+      "exit_price": 7576.25
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

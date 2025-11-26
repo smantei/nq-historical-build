@@ -1,0 +1,96 @@
+{
+  "event_id": "EV01449",
+  "window": {
+    "hourly_fvg_id": "FH08657",
+    "hourly_start_time": "2025-03-10T18:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2025-03-10 19:25",
+    "bos_window_end": "2025-03-10 22:25"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH08657",
+    "direction": "down",
+    "start_time": "2025-03-10T18:00",
+    "begin_bound": 19522.75,
+    "end_bound": 19500.0
+  },
+  "touch": {
+    "touch_id": "TCH0064394",
+    "fvg_hour_id": "FH08657",
+    "fvg_direction": "down",
+    "fvg_start_time": "2025-03-10T18:00",
+    "window_start": "2025-03-10T19:00",
+    "window_end": "2025-03-10T22:00",
+    "ts_event": "2025-03-10 19:25",
+    "price_touched": 19429.25,
+    "bound_broken": 19500.0,
+    "touch_type": "touch_down_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5210938",
+      "direction": "down",
+      "start_time": "2025-03-10T19:45",
+      "begin_bound": 19463.75,
+      "end_bound": 19462.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0159167",
+      "ts_event": "2025-03-10 19:30",
+      "bos_direction": "bos_up",
+      "trigger_close": 19531.75,
+      "broken_level": 19500.0,
+      "source_hilo_id": "HL1034954"
+    },
+    {
+      "bos_id": "BOS0159168",
+      "ts_event": "2025-03-10 19:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 19395.0,
+      "broken_level": 19429.25,
+      "source_hilo_id": "HL1034955"
+    },
+    {
+      "bos_id": "BOS0159169",
+      "ts_event": "2025-03-10 20:15",
+      "bos_direction": "bos_up",
+      "trigger_close": 19480.5,
+      "broken_level": 19478.5,
+      "source_hilo_id": "HL1034963"
+    },
+    {
+      "bos_id": "BOS0159170",
+      "ts_event": "2025-03-10 22:05",
+      "bos_direction": "bos_down",
+      "trigger_close": 19389.0,
+      "broken_level": 19416.75,
+      "source_hilo_id": "HL1034973"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_short",
+      "fvg_5m_id": "F5210938",
+      "direction": "down",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 1,
+      "entry_ts": "2025-03-10 19:50",
+      "entry_price": 19431.0,
+      "stop_loss": 19552.0,
+      "take_profit": 19310.0,
+      "exit_signal": "sell_s_loss_session_close",
+      "exit_ts": "2025-03-10 20:55",
+      "exit_price": 19472.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

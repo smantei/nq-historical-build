@@ -1,0 +1,96 @@
+{
+  "event_id": "EV01145",
+  "window": {
+    "hourly_fvg_id": "FH06784",
+    "hourly_start_time": "2022-02-08T17:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2022-02-08 19:20",
+    "bos_window_end": "2022-02-08 22:20"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH06784",
+    "direction": "up",
+    "start_time": "2022-02-08T17:00",
+    "begin_bound": 14627.5,
+    "end_bound": 14659.0
+  },
+  "touch": {
+    "touch_id": "TCH0051370",
+    "fvg_hour_id": "FH06784",
+    "fvg_direction": "up",
+    "fvg_start_time": "2022-02-08T17:00",
+    "window_start": "2022-02-08T18:00",
+    "window_end": "2022-02-08T21:00",
+    "ts_event": "2022-02-08 19:20",
+    "price_touched": 14648.5,
+    "bound_broken": 14659.0,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5167377",
+      "direction": "up",
+      "start_time": "2022-02-08T20:15",
+      "begin_bound": 14669.0,
+      "end_bound": 14705.0,
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0122544",
+      "ts_event": "2022-02-08 19:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 14657.25,
+      "broken_level": 14661.0,
+      "source_hilo_id": "HL0816749"
+    },
+    {
+      "bos_id": "BOS0122545",
+      "ts_event": "2022-02-08 19:35",
+      "bos_direction": "bos_down",
+      "trigger_close": 14629.25,
+      "broken_level": 14630.75,
+      "source_hilo_id": "HL0816756"
+    },
+    {
+      "bos_id": "BOS0122546",
+      "ts_event": "2022-02-08 20:10",
+      "bos_direction": "bos_up",
+      "trigger_close": 14711.75,
+      "broken_level": 14668.0,
+      "source_hilo_id": "HL0816761"
+    },
+    {
+      "bos_id": "BOS0122547",
+      "ts_event": "2022-02-08 20:50",
+      "bos_direction": "bos_up",
+      "trigger_close": 14758.5,
+      "broken_level": 14734.75,
+      "source_hilo_id": "HL0816769"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5167377",
+      "direction": "up",
+      "index_first_touch": 1,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2022-02-08 20:30",
+      "entry_price": 14723.5,
+      "stop_loss": 14615.0,
+      "take_profit": 14832.0,
+      "exit_signal": "sell_l_prof_session_close",
+      "exit_ts": "2022-02-08 20:55",
+      "exit_price": 14733.5
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 4,
+    "count_signals": 1
+  }
+}

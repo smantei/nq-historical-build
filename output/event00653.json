@@ -1,0 +1,88 @@
+{
+  "event_id": "EV00653",
+  "window": {
+    "hourly_fvg_id": "FH03902",
+    "hourly_start_time": "2017-04-21T06:00",
+    "touch_window_hours": 3,
+    "bos_window_hours": 3,
+    "bos_window_start": "2017-04-21 07:05",
+    "bos_window_end": "2017-04-21 10:05"
+  },
+  "hourly_fvg": {
+    "fvg_hour_id": "FH03902",
+    "direction": "up",
+    "start_time": "2017-04-21T06:00",
+    "begin_bound": 5448.25,
+    "end_bound": 5451.5
+  },
+  "touch": {
+    "touch_id": "TCH0030635",
+    "fvg_hour_id": "FH03902",
+    "fvg_direction": "up",
+    "fvg_start_time": "2017-04-21T06:00",
+    "window_start": "2017-04-21T07:00",
+    "window_end": "2017-04-21T10:00",
+    "ts_event": "2017-04-21 07:05",
+    "price_touched": 5451.25,
+    "bound_broken": 5451.5,
+    "touch_type": "touch_up_fvg"
+  },
+  "fvg_5m_in_window": [
+    {
+      "fvg_5m_id": "F5100622",
+      "direction": "up",
+      "start_time": "2017-04-21T09:45",
+      "begin_bound": 5451.0,
+      "end_bound": 5451.75,
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3
+    }
+  ],
+  "bos_5m_in_window": [
+    {
+      "bos_id": "BOS0067983",
+      "ts_event": "2017-04-21 07:20",
+      "bos_direction": "bos_down",
+      "trigger_close": 5450.0,
+      "broken_level": 5451.25,
+      "source_hilo_id": "HL0479883"
+    },
+    {
+      "bos_id": "BOS0067984",
+      "ts_event": "2017-04-21 08:40",
+      "bos_direction": "bos_down",
+      "trigger_close": 5450.5,
+      "broken_level": 5451.5,
+      "source_hilo_id": "HL0479899"
+    },
+    {
+      "bos_id": "BOS0067985",
+      "ts_event": "2017-04-21 09:25",
+      "bos_direction": "bos_up",
+      "trigger_close": 5450.5,
+      "broken_level": 5450.25,
+      "source_hilo_id": "HL0479908"
+    }
+  ],
+  "trade_signals": [
+    {
+      "signal": "buy_long",
+      "fvg_5m_id": "F5100622",
+      "direction": "up",
+      "index_first_touch": 2,
+      "index_valid_close_after_touch": 3,
+      "entry_ts": "2017-04-21 10:00",
+      "entry_price": 5453.0,
+      "stop_loss": 5448.0,
+      "take_profit": 5458.0,
+      "exit_signal": "sell_l_loss",
+      "exit_ts": "2017-04-21 12:20",
+      "exit_price": 5448.0
+    }
+  ],
+  "summary": {
+    "count_fvg_5m": 1,
+    "count_bos_5m": 3,
+    "count_signals": 1
+  }
+}
